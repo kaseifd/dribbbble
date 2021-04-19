@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="dribble">
+    <div class="dribbble">
         <!--HEADER-->
 
         <header class="header">
@@ -57,15 +57,17 @@
 
             </div>
         </header>
+
+        <!--SLIDER-->
         <!-- Slider main container -->
         <div class="swiper-container">
-      
+
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide"><img src="assets/img/slider_1.png" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/slider_1.png" alt=""></div>
+                <div class="swiper-slide"><img src="assets/img/slider_1.png" alt=""></div>
             </div>
 
             <!-- If we need pagination -->
@@ -74,12 +76,100 @@
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
         </div>
 
-        <!--SLIDER-->
+
+        <div class="main">
+            <div class="main_holder">
+                <!--FILTROS-->
+                <div class="filter_nav_holder">
+                    <div class="filter_nav">
+                        <div class="filter_views">
+                            <div class="dropdown_button">
+                                <div class="selected_option">Popular</div>
+                                <div class="arrow">
+                                    <div class="fa fa-angle-down"></div>
+                                </div>
+
+                                <div class="dropdown_options">
+                                    <ul>
+                                        <li class="option">Popular</li>
+                                        <li class="option">New & Noteworthy</li>
+                                        <li class="option">Good for Sale</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter_categories">
+                            <ul>
+                                <li class="category">All</li>
+                                <li class="category">Animation</li>
+                                <li class="category">Branding</li>
+                                <li class="category">Illustration</li>
+                                <li class="category">Mobile</li>
+                                <li class="category">Print</li>
+                                <li class="category">Product Design</li>
+                                <li class="category">Typography</li>
+                                <li class="category">Web Desing</li>
+                            </ul>
+                        </div>
+                        <div class="filter_settigns">
+                            <div class="filter_button">
+                                <div class="label">Filter</div>
+                                <div class="filter">
+                                    <div class="fa fa-filter"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter_subnav">
+                        <!--METER FORM EN LOS FILTROS?, PREGUNTAR A CARLOS-->
+                    </div>
+                </div>
+
+                <!--GRID-->
+                <div class="home_grid">
+                    <div class="home_grid_holder">
+                        <div class="card">
+                            <div class="image">
+                                <img src="" alt="">
+                                <h4 class="project_name">DNA Test - Web Design</h4>
+                                <div class="folder">
+                                    <div class="fa fa-folder"></div>
+                                </div>
+                                <div class="heart">
+                                    <div class="fa fa-heart"></div>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <div class="author">
+                                    <img src="" alt="">
+                                    <h5 class="author_name">Outcrowd</h5>
+                                    <div class="badge_pro">Pro</div>
+                                    <div class="badge_team">Team</div>
+                                </div>
+                                <div class="statistics">
+                                    <div class="likes">
+                                        <div class="heart">
+                                            <div class="fa fa-heart"></div>
+                                        </div>
+                                        <p>123</p>
+                                    </div>
+                                    <div class="views">
+                                        <div class="eye">
+                                            <div class="fa fa-eye"></div>
+                                        </div>
+                                        <p>123</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
