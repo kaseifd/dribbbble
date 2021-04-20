@@ -3538,6 +3538,10 @@ template {
   color: black;
 }
 
+.header .header_holder .header_navi .inspiration_subnav .main_nav ul .inspiration_item svg, .header .header_holder .header_navi .inspiration_subnav .main_nav ul .find_work_item svg, .header .header_holder .header_navi .inspiration_subnav .main_nav ul .hire_item svg, .header .header_holder .header_navi .inspiration_subnav .find_work_nav ul .inspiration_item svg, .header .header_holder .header_navi .inspiration_subnav .find_work_nav ul .find_work_item svg, .header .header_holder .header_navi .inspiration_subnav .find_work_nav ul .hire_item svg, .header .header_holder .header_navi .inspiration_subnav .hire_nav ul .inspiration_item svg, .header .header_holder .header_navi .inspiration_subnav .hire_nav ul .find_work_item svg, .header .header_holder .header_navi .inspiration_subnav .hire_nav ul .hire_item svg, .header .header_holder .header_navi .find_work_subnav .main_nav ul .inspiration_item svg, .header .header_holder .header_navi .find_work_subnav .main_nav ul .find_work_item svg, .header .header_holder .header_navi .find_work_subnav .main_nav ul .hire_item svg, .header .header_holder .header_navi .find_work_subnav .find_work_nav ul .inspiration_item svg, .header .header_holder .header_navi .find_work_subnav .find_work_nav ul .find_work_item svg, .header .header_holder .header_navi .find_work_subnav .find_work_nav ul .hire_item svg, .header .header_holder .header_navi .find_work_subnav .hire_nav ul .inspiration_item svg, .header .header_holder .header_navi .find_work_subnav .hire_nav ul .find_work_item svg, .header .header_holder .header_navi .find_work_subnav .hire_nav ul .hire_item svg, .header .header_holder .header_navi .hire_subnav .main_nav ul .inspiration_item svg, .header .header_holder .header_navi .hire_subnav .main_nav ul .find_work_item svg, .header .header_holder .header_navi .hire_subnav .main_nav ul .hire_item svg, .header .header_holder .header_navi .hire_subnav .find_work_nav ul .inspiration_item svg, .header .header_holder .header_navi .hire_subnav .find_work_nav ul .find_work_item svg, .header .header_holder .header_navi .hire_subnav .find_work_nav ul .hire_item svg, .header .header_holder .header_navi .hire_subnav .hire_nav ul .inspiration_item svg, .header .header_holder .header_navi .hire_subnav .hire_nav ul .find_work_item svg, .header .header_holder .header_navi .hire_subnav .hire_nav ul .hire_item svg {
+  width: 24px;
+}
+
 .header .header_holder .header_ctas {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3558,16 +3562,84 @@ template {
   cursor: pointer;
 }
 
+:root {
+  --swiper-theme-color: white;
+}
+
+body,
+html {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 300px;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: gray;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+
 * {
-  border: 1px solid tomato;
+  border: 1px solid #d95988;
 }
 
 html,
 body {
-  font-size: 1rem;
+  font-size: 16px;
   font-family: "Source Sans Pro", "Helvetica", Arial, sans_serif;
-  line-height: 1.5rem;
+  line-height: 24px;
   color: #333;
   min-height: 100vh;
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: -0.1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: lighter;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+h4 {
+  font-family: serif;
+  font-size: 32px;
+  font-weight: lighter;
+  margin-top: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */

@@ -36,6 +36,47 @@
                         }
                     }
                 }
+            }
+            .inspiration_subnav, .find_work_subnav, .hire_subnav{
+                .main_nav, .find_work_nav, .hire_nav{
+                    ul{
+                        .inspiration_item, .find_work_item, .hire_item{
+                            svg{
+                                width: 24px;
+
+                            }
+                            .dropdown_item_text{
+                                label{
+
+                                }
+                                p{
+
+                                }
+                            }
+                            .arrow{
+                                .fa{
+
+                                }
+                            }
+                        }
+                    }
+                }
+                .category_nav{
+                    .header_category_nav{
+                        .label{
+
+                        }
+                    }
+                    ul{
+                        .category{
+                            a{
+
+                            }
+
+                        }
+                    }
+
+                }
             }  
         }
         

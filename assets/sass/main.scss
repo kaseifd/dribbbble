@@ -6,9 +6,14 @@
 @import 'lib/keyframes';
 
 @import 'partials/header';
+@import 'partials/slider';
+@import 'partials/main';
+@import 'partials/footer';
 
 
-$corporateColor: tomato;
+$corporateColor: rgb(217, 89, 136);
+$base: 8px;
+
 
 * {
     border: 1px solid $corporateColor;
@@ -21,4 +26,35 @@ body {
     line-height: $base * 3;
     color: $body_color;
     min-height: 100vh;
+}
+
+h1 {
+    font-size: $base * 9;
+    line-height: $base * 9;
+    letter-spacing: -0.1rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: lighter;
+}
+h2 {
+    font-size: $base * 2.25;
+    line-height: $base * 2.75;
+}
+h3 {
+    font-size: $base * 1.75;
+    font-weight: normal;
+    margin: 0;
+}
+h4 {
+    font-family: serif;
+    font-size: $base * 4;
+    font-weight: lighter;
+    margin-top: $base * 5;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: black;
 }
