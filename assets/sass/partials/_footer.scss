@@ -1,50 +1,69 @@
-footer{
-    .footer_main_content{
-        .brand{
-            img{
-
-            }
-            p{
-
-            }
-            .social{
-                a{
-                    .fa{
-
+footer {
+    display: flex;
+    justify-content: center; // flex-end center space-between
+    align-items: center; // flex-end center stretch baseline
+    padding: $base * 2;
+    width: 100%;
+    .footer_holder {
+        width: 100%;
+        max-width: 1440px;
+        .footer_main_content {
+            display: flex;
+            .brand {
+                img {
+                    width: 100px;
+                }
+                p {
+                    width: 35ch;
+                }
+                .social {
+                    display: flex;
+                    a {
+                        margin-right: $base;
+                        font-size: 24px;
+                        
+                        .fa {
+                            font-size: 24px;
+                        }
                     }
                 }
             }
-        }
-        .links{
-            .column{
-                header{
-                    .label{
+            .links {
+                display: flex;
+                .column {
+                    margin-left: $base * 4;
+                    header {
+                        .label {
 
+                        }
                     }
-                }
-                ul{
-                    .link{
-                        a{
-
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        .link {
+                            a {
+                            }
                         }
                     }
                 }
             }
         }
-
-    }
-    .footer_lower_content{
-        .copy{
-
-        }
-        .dribbbled{
-            p{
-
+        .footer_lower_content {
+            display: flex;
+            justify-content: space-between;
+            .copy {
+                margin: 0;
             }
-            img{
-                
+            .dribbbled {
+                display: flex;
+                p {
+                    margin: 0;
+                }
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
             }
         }
-
     }
 }
