@@ -1,104 +1,134 @@
-.header{
+.header {
     display: flex;
     justify-content: center; // flex-end center space-between
     align-items: center; // flex-end center stretch baseline
     padding: $base * 2;
     font-size: 0.9rem;
     width: 100%;
-    .header_holder{
+    .header_holder {
         width: 100%;
         max-width: 1440px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .header_navi{
+        .header_navi {
             display: flex;
             align-items: center;
-            .header_brand{
-                img{
+            .header_brand {
+                img {
                     width: 100px;
-    
                 }
             }
-            nav{
-                .header_navigation_items{
+            nav {
+                margin-left: $base * 3;
+                .header_navigation_items {
                     display: flex;
                     margin: 0;
                     padding: 0;
                     list-style: none;
                     margin-right: 1rem;
-                
-                    .header_navigation_item{
-                        margin-right: 1rem;
-                        a{
+
+                    .header_navigation_item {
+                        margin-right: $base * 3;
+                        position: relative;
+
+                        a {
                             text-decoration: none;
                             color: black;
                         }
                     }
                 }
             }
-            .inspiration_subnav, .find_work_subnav, .hire_subnav{
-                .main_nav, .find_work_nav, .hire_nav{
-                    ul{
-                        .inspiration_item, .find_work_item, .hire_item{
-                            svg{
-                                width: 24px;
-
-                            }
-                            .dropdown_item_text{
-                                label{
-
-                                }
-                                p{
-
-                                }
-                            }
-                            .arrow{
-                                .fa{
-
-                                }
-                            }
-                        }
-                    }
-                }
-                .category_nav{
-                    .header_category_nav{
-                        .label{
-
-                        }
-                    }
-                    ul{
-                        .category{
-                            a{
-
-                            }
-
-                        }
-                    }
-
-                }
-            }  
-        }
-        
-        
-            .header_ctas{
+            .inspiration_subnav,
+            .find_work_subnav,
+            .hire_subnav {
+                padding: $base * 2;
                 display: flex;
-                align-items: center;
-                .search{
-                    .fa{
+                position: absolute;
+                top: 40px;
+                background-color: white;
+                z-index: 2;
+                display: none;
 
+                &opened{
+                    display: block;
+                }
+
+                .main_nav,
+                .find_work_nav,
+                .hire_nav {
+                    width: 350px;
+                    
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        .inspiration_item,
+                        .find_work_item,
+                        .hire_item {
+                            padding: $base*2;
+                            a {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                div {
+                                    display: flex;
+                                    svg {
+                                        width: 32px;
+                                    }
+                                    .dropdown_item_text {
+                                        display: block;
+                                        label {
+                                        }
+                                        p {
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+
+                                .arrow {
+                                    .fa {
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
-                .boton{
-                    padding: $base $base * 3;
-                    color: white;
-                    background-color: black;
-                    border-radius: 5px;
-                    border: none;
-                    transition: background-color 350ms ease;
-                    cursor: pointer;
-
+                .category_nav {
+                    .header_category_nav {
+                        width: 150px;
+                        .label {
+                        }
+                    }
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                        .category {
+                            a {
+                            }
+                        }
+                    }
                 }
             }
         }
+
+        .header_ctas {
+            display: flex;
+            align-items: center;
+            .search {
+                margin-right: $base * 3;
+                font-size: 24px;
+                .fa {
+                }
+            }
+            .boton {
+                padding: $base $base * 3;
+                color: white;
+                background-color: black;
+                border-radius: 5px;
+                border: none;
+                transition: background-color 350ms ease;
+                cursor: pointer;
+            }
+        }
     }
+}
