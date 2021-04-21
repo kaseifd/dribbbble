@@ -25,7 +25,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Source Sans Pro", "Helvetica", Arial, sans_serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 1.4;
@@ -127,14 +127,14 @@ sup {
 }
 
 a {
-  color: #345c8d;
+  color: #686868;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
-  color: #264468;
+  color: #4f4f4f;
   text-decoration: none;
 }
 
@@ -3487,7 +3487,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  padding: 16px;
   font-size: 0.9rem;
   width: 100%;
 }
@@ -3516,11 +3516,11 @@ template {
 }
 
 .header .header_holder .header_navi .header_brand img {
-  width: 100px;
+  width: 80px;
 }
 
 .header .header_holder .header_navi nav {
-  margin-left: 1.5rem;
+  margin-left: 24px;
 }
 
 .header .header_holder .header_navi nav .header_navigation_items {
@@ -3534,19 +3534,21 @@ template {
 }
 
 .header .header_holder .header_navi nav .header_navigation_items .header_navigation_item {
-  margin-right: 1.5rem;
+  margin-right: 24px;
   position: relative;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .header .header_holder .header_navi nav .header_navigation_items .header_navigation_item a {
   text-decoration: none;
-  color: black;
+  color: #686868;
 }
 
 .header .header_holder .header_navi .inspiration_subnav,
 .header .header_holder .header_navi .find_work_subnav,
 .header .header_holder .header_navi .hire_subnav {
-  padding: 1rem;
+  padding: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3615,7 +3617,7 @@ template {
 .header .header_holder .header_navi .hire_subnav .hire_nav ul .inspiration_item,
 .header .header_holder .header_navi .hire_subnav .hire_nav ul .find_work_item,
 .header .header_holder .header_navi .hire_subnav .hire_nav ul .hire_item {
-  padding: 1rem;
+  padding: 16px;
 }
 
 .header .header_holder .header_navi .inspiration_subnav .main_nav ul .inspiration_item a,
@@ -3801,18 +3803,19 @@ template {
 }
 
 .header .header_holder .header_ctas .search {
-  margin-right: 1.5rem;
-  font-size: 24px;
+  margin-right: 24px;
+  font-size: 20px;
+  color: #acacac;
 }
 
 .header .header_holder .header_ctas .boton {
-  padding: 0.5rem 1.5rem;
+  padding: 8px 12px;
   color: white;
-  background-color: black;
+  font-weight: bold;
+  background-color: #ea4c89;
+  font-size: 14px;
   border-radius: 5px;
   border: none;
-  -webkit-transition: background-color 350ms ease;
-  transition: background-color 350ms ease;
   cursor: pointer;
 }
 
@@ -3859,7 +3862,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  padding: 16px;
   font-size: 0.9rem;
   width: 100%;
 }
@@ -3913,7 +3916,7 @@ html {
 }
 
 .filter_nav_holder .filter_nav .filter_views .arrow {
-  margin-left: 1rem;
+  margin-left: 16px;
 }
 
 .filter_nav_holder .filter_categories ul {
@@ -3925,8 +3928,8 @@ html {
 }
 
 .filter_nav_holder .filter_categories ul .category {
-  padding: 0.5rem;
-  margin-right: 1.5rem;
+  padding: 8px;
+  margin-right: 24px;
 }
 
 .filter_nav_holder .filter_settigns .filter_button {
@@ -3939,7 +3942,7 @@ html {
 }
 
 .filter_nav_holder .filter_settigns .filter_button .filter {
-  margin-left: 1rem;
+  margin-left: 16px;
 }
 
 .home_grid {
@@ -3951,7 +3954,7 @@ html {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1.5rem;
+  grid-gap: 24px;
 }
 
 .home_grid .home_grid_holder .card .image {
@@ -3974,7 +3977,7 @@ html {
 }
 
 .home_grid .home_grid_holder .card .image .image_hover .image_hover_content {
-  padding: 0.5rem;
+  padding: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3993,15 +3996,15 @@ html {
 }
 
 .home_grid .home_grid_holder .card .image .image_hover .image_hover_content .icons .folder .fa {
-  padding: 0.5rem;
+  padding: 8px;
   background-color: white;
   border-radius: 10px;
-  margin-right: 0.5rem;
+  margin-right: 8px;
 }
 
 .home_grid .home_grid_holder .card .image .image_hover .image_hover_content .icons .heart .fa {
   text-align: center center;
-  padding: 0.5rem;
+  padding: 8px;
   background-color: white;
   border-radius: 10px;
 }
@@ -4062,7 +4065,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  padding: 16px;
   width: 100%;
 }
 
@@ -4092,7 +4095,7 @@ footer .footer_holder .footer_main_content .brand .social {
 }
 
 footer .footer_holder .footer_main_content .brand .social a {
-  margin-right: 0.5rem;
+  margin-right: 8px;
   font-size: 24px;
 }
 
@@ -4107,7 +4110,7 @@ footer .footer_holder .footer_main_content .links {
 }
 
 footer .footer_holder .footer_main_content .links .column {
-  margin-left: 2rem;
+  margin-left: 32px;
 }
 
 footer .footer_holder .footer_main_content .links .column ul {
@@ -4144,46 +4147,56 @@ footer .footer_holder .footer_lower_content .dribbbled img {
 }
 
 * {
-  border: 1px solid #d95988;
+  border: 1px solid #ea4c89;
 }
 
 html,
 body {
   font-size: 16px;
-  font-family: "Source Sans Pro", "Helvetica", Arial, sans_serif;
+  font-family: "Helvetica", sans-serif;
   line-height: 24px;
   color: #333;
   min-height: 100vh;
 }
 
 h1 {
-  font-size: 72px;
-  line-height: 72px;
+  font-size: 48px;
+  line-height: 56px;
   letter-spacing: -0.1rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: lighter;
 }
 
 h2 {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 36px;
+  line-height: 40px;
 }
 
 h3 {
-  font-size: 14px;
-  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
   margin: 0;
 }
 
 h4 {
-  font-family: serif;
-  font-size: 24px;
-  font-weight: lighter;
+  font-size: 18px;
+  line-height: 24px;
   margin: 0;
 }
 
 h5 {
+  font-size: 16px;
+  line-height: 24px;
   margin: 0;
+}
+
+h6 {
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 a {
