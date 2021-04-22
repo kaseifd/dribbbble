@@ -5,6 +5,7 @@
     padding: $base * 2;
     font-size: 0.9rem;
     width: 100%;
+
     .header_holder {
         width: 100%;
         max-width: 1350px;
@@ -15,8 +16,7 @@
             display: flex;
             align-items: center;
             .header_brand {
-                img {
-                    width: 80px;
+                a {
                 }
             }
             nav {
@@ -39,35 +39,44 @@
                             color: $link_color;
                         }
                     }
+                    .header_navigation_item:hover > a {
+                        color: $corporateColor;
+                    }
                 }
             }
             .inspiration_subnav,
             .find_work_subnav,
             .hire_subnav {
-                padding: $base * 2;
+                overflow: hidden;
                 display: flex;
                 position: absolute;
                 top: 40px;
                 background-color: white;
                 z-index: 2;
                 display: none;
+                border-radius: 20px;
+                box-shadow: 0px 6px 20px 0px rgba(196,196,196,0.27);
+                // background-color: rgba(255, 255, 255, 0.5);
+                // backdrop-filter: blur(6px);
 
-                &opened{
-                    display: block;
+                &opened {
+                    display: flex;
                 }
 
                 .main_nav,
                 .find_work_nav,
                 .hire_nav {
                     width: 350px;
-                    
+                    margin: $base*2;
+
                     ul {
                         list-style: none;
                         padding: 0;
                         .inspiration_item,
                         .find_work_item,
                         .hire_item {
-                            padding: $base*2;
+                            padding: $base * 2 $base * 3;
+                            border-radius: 10px;
                             a {
                                 display: flex;
                                 justify-content: space-between;
@@ -79,38 +88,81 @@
                                     }
                                     .dropdown_item_text {
                                         display: block;
-                                        label {
+                                        margin-left: $base * 2;
+                                        color: black;
+                                        
+                                        
+                                        .title {
+                                            font-size: $ui_font_size;
+                                            
                                         }
-                                        p {
+                                        
+
+                                        .description {
                                             margin: 0;
+                                            font-size: 13px;
+                                            font-weight: normal;
+                                            color: grey;
                                         }
+                                        
                                     }
                                 }
 
                                 .arrow {
+                                    color: $corporateColor;
                                     .fa {
                                     }
                                 }
                             }
                         }
+                        .inspiration_item:hover,
+                        .find_work_item:hover,
+                        .hire_item:hover{
+                            background-color: $corporateColorOpacity;
+                            
+                            
+                        }
+
+
+
+                        // .hire_item:hover > .title, .inspiration_item:hover > .title, .find_work_item:hover > .title{
+                        //     color: $corporateColor !important;
+                        // }
+                        // .hire_item:hover > .description, .inspiration_item:hover > .description, .find_work_item:hover > .description{
+                        //     color: rgb(66, 66, 66);
+                        // }
                     }
                 }
                 .category_nav {
+                    padding: $base * 4;
+                    margin: 0;
+                    background-color: rgb(250, 250, 250);
                     .header_category_nav {
                         width: 150px;
+                        
                         .label {
+                            color: black;
+                            font-size: $ui_font_size;
                         }
                     }
                     ul {
                         list-style: none;
                         padding: 0;
-                        .category {
+                        .category { 
+                            margin: $base * 2 0;
                             a {
+                               
+                                
+                            }
+                            a:hover{
+                                color: black;
                             }
                         }
                     }
                 }
             }
+
+           
         }
 
         .header_ctas {

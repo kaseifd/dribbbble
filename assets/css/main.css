@@ -25,7 +25,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Neue-Roman", "Helvetica", sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 1.4;
@@ -3382,98 +3382,30 @@ template {
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-Regular.eot");
-  src: url("../fonts/source-sans/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-Regular.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-Regular.ttf") format("truetype");
+  font-family: 'Neue-Roman';
+  src: url("../fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayRoman.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-ExtraLight.eot");
-  src: url("../fonts/source-sans/SourceSansPro-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-ExtraLight.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-ExtraLight.ttf") format("truetype");
+  font-family: 'Neue-Bold';
+  src: url("../fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayBold.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-BoldIt.eot");
-  src: url("../fonts/source-sans/SourceSansPro-BoldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-BoldIt.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-BoldIt.ttf") format("truetype");
+  font-family: 'Neue-Light';
+  src: url("../fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayLight.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-Bold.eot");
-  src: url("../fonts/source-sans/SourceSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-Bold.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-Bold.ttf") format("truetype");
+  font-family: 'Neue-Medium';
+  src: url("../fonts/neue-haas-grotesk-display-pro/NeueHaasDisplayMedium.ttf") format("truetype");
   font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-BlackIt.eot");
-  src: url("../fonts/source-sans/SourceSansPro-BlackIt.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-BlackIt.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-BlackIt.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-It.eot");
-  src: url("../fonts/source-sans/SourceSansPro-It.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-It.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-It.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-SemiboldIt.eot");
-  src: url("../fonts/source-sans/SourceSansPro-SemiboldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-SemiboldIt.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-SemiboldIt.ttf") format("truetype");
-  font-weight: 600;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-ExtraLightIt.eot");
-  src: url("../fonts/source-sans/SourceSansPro-ExtraLightIt.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-ExtraLightIt.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-ExtraLightIt.ttf") format("truetype");
-  font-weight: 200;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-Light.eot");
-  src: url("../fonts/source-sans/SourceSansPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-Light.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-Semibold.eot");
-  src: url("../fonts/source-sans/SourceSansPro-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-Semibold.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-Semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-LightIt.eot");
-  src: url("../fonts/source-sans/SourceSansPro-LightIt.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-LightIt.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-LightIt.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-Black.eot");
-  src: url("../fonts/source-sans/SourceSansPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-Black.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-Black.ttf") format("truetype");
-  font-weight: 900;
   font-style: normal;
 }
 
@@ -3515,10 +3447,6 @@ template {
           align-items: center;
 }
 
-.header .header_holder .header_navi .header_brand img {
-  width: 80px;
-}
-
 .header .header_holder .header_navi nav {
   margin-left: 24px;
 }
@@ -3545,10 +3473,14 @@ template {
   color: #686868;
 }
 
+.header .header_holder .header_navi nav .header_navigation_items .header_navigation_item:hover > a {
+  color: #ea4c89;
+}
+
 .header .header_holder .header_navi .inspiration_subnav,
 .header .header_holder .header_navi .find_work_subnav,
 .header .header_holder .header_navi .hire_subnav {
-  padding: 16px;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3557,12 +3489,17 @@ template {
   background-color: white;
   z-index: 2;
   display: none;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 6px 20px 0px rgba(196, 196, 196, 0.27);
+          box-shadow: 0px 6px 20px 0px rgba(196, 196, 196, 0.27);
 }
 
 .header .header_holder .header_navi .inspiration_subnavopened,
 .header .header_holder .header_navi .find_work_subnavopened,
 .header .header_holder .header_navi .hire_subnavopened {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header .header_holder .header_navi .inspiration_subnav .main_nav,
@@ -3575,6 +3512,7 @@ template {
 .header .header_holder .header_navi .hire_subnav .find_work_nav,
 .header .header_holder .header_navi .hire_subnav .hire_nav {
   width: 350px;
+  margin: 16px;
 }
 
 .header .header_holder .header_navi .inspiration_subnav .main_nav ul,
@@ -3617,7 +3555,8 @@ template {
 .header .header_holder .header_navi .hire_subnav .hire_nav ul .inspiration_item,
 .header .header_holder .header_navi .hire_subnav .hire_nav ul .find_work_item,
 .header .header_holder .header_navi .hire_subnav .hire_nav ul .hire_item {
-  padding: 16px;
+  padding: 16px 24px;
+  border-radius: 10px;
 }
 
 .header .header_holder .header_navi .inspiration_subnav .main_nav ul .inspiration_item a,
@@ -3748,36 +3687,139 @@ template {
 .header .header_holder .header_navi .hire_subnav .hire_nav ul .find_work_item a div .dropdown_item_text,
 .header .header_holder .header_navi .hire_subnav .hire_nav ul .hire_item a div .dropdown_item_text {
   display: block;
+  margin-left: 16px;
+  color: black;
 }
 
-.header .header_holder .header_navi .inspiration_subnav .main_nav ul .inspiration_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .inspiration_subnav .main_nav ul .find_work_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .inspiration_subnav .main_nav ul .hire_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .inspiration_subnav .find_work_nav ul .inspiration_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .inspiration_subnav .find_work_nav ul .find_work_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .inspiration_subnav .find_work_nav ul .hire_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .inspiration_subnav .hire_nav ul .inspiration_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .inspiration_subnav .hire_nav ul .find_work_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .inspiration_subnav .hire_nav ul .hire_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .find_work_subnav .main_nav ul .inspiration_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .find_work_subnav .main_nav ul .find_work_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .find_work_subnav .main_nav ul .hire_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .find_work_subnav .find_work_nav ul .inspiration_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .find_work_subnav .find_work_nav ul .find_work_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .find_work_subnav .find_work_nav ul .hire_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .find_work_subnav .hire_nav ul .inspiration_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .find_work_subnav .hire_nav ul .find_work_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .find_work_subnav .hire_nav ul .hire_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .hire_subnav .main_nav ul .inspiration_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .hire_subnav .main_nav ul .find_work_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .hire_subnav .main_nav ul .hire_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .hire_subnav .find_work_nav ul .inspiration_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .hire_subnav .find_work_nav ul .find_work_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .hire_subnav .find_work_nav ul .hire_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .hire_subnav .hire_nav ul .inspiration_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .hire_subnav .hire_nav ul .find_work_item a div .dropdown_item_text p,
-.header .header_holder .header_navi .hire_subnav .hire_nav ul .hire_item a div .dropdown_item_text p {
+.header .header_holder .header_navi .inspiration_subnav .main_nav ul .inspiration_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .inspiration_subnav .main_nav ul .find_work_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .inspiration_subnav .main_nav ul .hire_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .inspiration_subnav .find_work_nav ul .inspiration_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .inspiration_subnav .find_work_nav ul .find_work_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .inspiration_subnav .find_work_nav ul .hire_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .inspiration_subnav .hire_nav ul .inspiration_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .inspiration_subnav .hire_nav ul .find_work_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .inspiration_subnav .hire_nav ul .hire_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .find_work_subnav .main_nav ul .inspiration_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .find_work_subnav .main_nav ul .find_work_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .find_work_subnav .main_nav ul .hire_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .find_work_subnav .find_work_nav ul .inspiration_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .find_work_subnav .find_work_nav ul .find_work_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .find_work_subnav .find_work_nav ul .hire_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .find_work_subnav .hire_nav ul .inspiration_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .find_work_subnav .hire_nav ul .find_work_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .find_work_subnav .hire_nav ul .hire_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .hire_subnav .main_nav ul .inspiration_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .hire_subnav .main_nav ul .find_work_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .hire_subnav .main_nav ul .hire_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .hire_subnav .find_work_nav ul .inspiration_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .hire_subnav .find_work_nav ul .find_work_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .hire_subnav .find_work_nav ul .hire_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .hire_subnav .hire_nav ul .inspiration_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .hire_subnav .hire_nav ul .find_work_item a div .dropdown_item_text .title,
+.header .header_holder .header_navi .hire_subnav .hire_nav ul .hire_item a div .dropdown_item_text .title {
+  font-size: 14px;
+}
+
+.header .header_holder .header_navi .inspiration_subnav .main_nav ul .inspiration_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .inspiration_subnav .main_nav ul .find_work_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .inspiration_subnav .main_nav ul .hire_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .inspiration_subnav .find_work_nav ul .inspiration_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .inspiration_subnav .find_work_nav ul .find_work_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .inspiration_subnav .find_work_nav ul .hire_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .inspiration_subnav .hire_nav ul .inspiration_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .inspiration_subnav .hire_nav ul .find_work_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .inspiration_subnav .hire_nav ul .hire_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .find_work_subnav .main_nav ul .inspiration_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .find_work_subnav .main_nav ul .find_work_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .find_work_subnav .main_nav ul .hire_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .find_work_subnav .find_work_nav ul .inspiration_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .find_work_subnav .find_work_nav ul .find_work_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .find_work_subnav .find_work_nav ul .hire_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .find_work_subnav .hire_nav ul .inspiration_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .find_work_subnav .hire_nav ul .find_work_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .find_work_subnav .hire_nav ul .hire_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .hire_subnav .main_nav ul .inspiration_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .hire_subnav .main_nav ul .find_work_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .hire_subnav .main_nav ul .hire_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .hire_subnav .find_work_nav ul .inspiration_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .hire_subnav .find_work_nav ul .find_work_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .hire_subnav .find_work_nav ul .hire_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .hire_subnav .hire_nav ul .inspiration_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .hire_subnav .hire_nav ul .find_work_item a div .dropdown_item_text .description,
+.header .header_holder .header_navi .hire_subnav .hire_nav ul .hire_item a div .dropdown_item_text .description {
   margin: 0;
+  font-size: 13px;
+  font-weight: normal;
+  color: grey;
+}
+
+.header .header_holder .header_navi .inspiration_subnav .main_nav ul .inspiration_item a .arrow,
+.header .header_holder .header_navi .inspiration_subnav .main_nav ul .find_work_item a .arrow,
+.header .header_holder .header_navi .inspiration_subnav .main_nav ul .hire_item a .arrow,
+.header .header_holder .header_navi .inspiration_subnav .find_work_nav ul .inspiration_item a .arrow,
+.header .header_holder .header_navi .inspiration_subnav .find_work_nav ul .find_work_item a .arrow,
+.header .header_holder .header_navi .inspiration_subnav .find_work_nav ul .hire_item a .arrow,
+.header .header_holder .header_navi .inspiration_subnav .hire_nav ul .inspiration_item a .arrow,
+.header .header_holder .header_navi .inspiration_subnav .hire_nav ul .find_work_item a .arrow,
+.header .header_holder .header_navi .inspiration_subnav .hire_nav ul .hire_item a .arrow,
+.header .header_holder .header_navi .find_work_subnav .main_nav ul .inspiration_item a .arrow,
+.header .header_holder .header_navi .find_work_subnav .main_nav ul .find_work_item a .arrow,
+.header .header_holder .header_navi .find_work_subnav .main_nav ul .hire_item a .arrow,
+.header .header_holder .header_navi .find_work_subnav .find_work_nav ul .inspiration_item a .arrow,
+.header .header_holder .header_navi .find_work_subnav .find_work_nav ul .find_work_item a .arrow,
+.header .header_holder .header_navi .find_work_subnav .find_work_nav ul .hire_item a .arrow,
+.header .header_holder .header_navi .find_work_subnav .hire_nav ul .inspiration_item a .arrow,
+.header .header_holder .header_navi .find_work_subnav .hire_nav ul .find_work_item a .arrow,
+.header .header_holder .header_navi .find_work_subnav .hire_nav ul .hire_item a .arrow,
+.header .header_holder .header_navi .hire_subnav .main_nav ul .inspiration_item a .arrow,
+.header .header_holder .header_navi .hire_subnav .main_nav ul .find_work_item a .arrow,
+.header .header_holder .header_navi .hire_subnav .main_nav ul .hire_item a .arrow,
+.header .header_holder .header_navi .hire_subnav .find_work_nav ul .inspiration_item a .arrow,
+.header .header_holder .header_navi .hire_subnav .find_work_nav ul .find_work_item a .arrow,
+.header .header_holder .header_navi .hire_subnav .find_work_nav ul .hire_item a .arrow,
+.header .header_holder .header_navi .hire_subnav .hire_nav ul .inspiration_item a .arrow,
+.header .header_holder .header_navi .hire_subnav .hire_nav ul .find_work_item a .arrow,
+.header .header_holder .header_navi .hire_subnav .hire_nav ul .hire_item a .arrow {
+  color: #ea4c89;
+}
+
+.header .header_holder .header_navi .inspiration_subnav .main_nav ul .inspiration_item:hover,
+.header .header_holder .header_navi .inspiration_subnav .main_nav ul .find_work_item:hover,
+.header .header_holder .header_navi .inspiration_subnav .main_nav ul .hire_item:hover,
+.header .header_holder .header_navi .inspiration_subnav .find_work_nav ul .inspiration_item:hover,
+.header .header_holder .header_navi .inspiration_subnav .find_work_nav ul .find_work_item:hover,
+.header .header_holder .header_navi .inspiration_subnav .find_work_nav ul .hire_item:hover,
+.header .header_holder .header_navi .inspiration_subnav .hire_nav ul .inspiration_item:hover,
+.header .header_holder .header_navi .inspiration_subnav .hire_nav ul .find_work_item:hover,
+.header .header_holder .header_navi .inspiration_subnav .hire_nav ul .hire_item:hover,
+.header .header_holder .header_navi .find_work_subnav .main_nav ul .inspiration_item:hover,
+.header .header_holder .header_navi .find_work_subnav .main_nav ul .find_work_item:hover,
+.header .header_holder .header_navi .find_work_subnav .main_nav ul .hire_item:hover,
+.header .header_holder .header_navi .find_work_subnav .find_work_nav ul .inspiration_item:hover,
+.header .header_holder .header_navi .find_work_subnav .find_work_nav ul .find_work_item:hover,
+.header .header_holder .header_navi .find_work_subnav .find_work_nav ul .hire_item:hover,
+.header .header_holder .header_navi .find_work_subnav .hire_nav ul .inspiration_item:hover,
+.header .header_holder .header_navi .find_work_subnav .hire_nav ul .find_work_item:hover,
+.header .header_holder .header_navi .find_work_subnav .hire_nav ul .hire_item:hover,
+.header .header_holder .header_navi .hire_subnav .main_nav ul .inspiration_item:hover,
+.header .header_holder .header_navi .hire_subnav .main_nav ul .find_work_item:hover,
+.header .header_holder .header_navi .hire_subnav .main_nav ul .hire_item:hover,
+.header .header_holder .header_navi .hire_subnav .find_work_nav ul .inspiration_item:hover,
+.header .header_holder .header_navi .hire_subnav .find_work_nav ul .find_work_item:hover,
+.header .header_holder .header_navi .hire_subnav .find_work_nav ul .hire_item:hover,
+.header .header_holder .header_navi .hire_subnav .hire_nav ul .inspiration_item:hover,
+.header .header_holder .header_navi .hire_subnav .hire_nav ul .find_work_item:hover,
+.header .header_holder .header_navi .hire_subnav .hire_nav ul .hire_item:hover {
+  background-color: #fef6f9;
+}
+
+.header .header_holder .header_navi .inspiration_subnav .category_nav,
+.header .header_holder .header_navi .find_work_subnav .category_nav,
+.header .header_holder .header_navi .hire_subnav .category_nav {
+  padding: 32px;
+  margin: 0;
+  background-color: #fafafa;
 }
 
 .header .header_holder .header_navi .inspiration_subnav .category_nav .header_category_nav,
@@ -3786,11 +3828,30 @@ template {
   width: 150px;
 }
 
+.header .header_holder .header_navi .inspiration_subnav .category_nav .header_category_nav .label,
+.header .header_holder .header_navi .find_work_subnav .category_nav .header_category_nav .label,
+.header .header_holder .header_navi .hire_subnav .category_nav .header_category_nav .label {
+  color: black;
+  font-size: 14px;
+}
+
 .header .header_holder .header_navi .inspiration_subnav .category_nav ul,
 .header .header_holder .header_navi .find_work_subnav .category_nav ul,
 .header .header_holder .header_navi .hire_subnav .category_nav ul {
   list-style: none;
   padding: 0;
+}
+
+.header .header_holder .header_navi .inspiration_subnav .category_nav ul .category,
+.header .header_holder .header_navi .find_work_subnav .category_nav ul .category,
+.header .header_holder .header_navi .hire_subnav .category_nav ul .category {
+  margin: 16px 0;
+}
+
+.header .header_holder .header_navi .inspiration_subnav .category_nav ul .category a:hover,
+.header .header_holder .header_navi .find_work_subnav .category_nav ul .category a:hover,
+.header .header_holder .header_navi .hire_subnav .category_nav ul .category a:hover {
+  color: black;
 }
 
 .header .header_holder .header_ctas {
@@ -3831,7 +3892,7 @@ html {
 
 .swiper-container {
   width: 100%;
-  height: 300px;
+  height: 650px;
 }
 
 .swiper-slide {
@@ -3844,7 +3905,66 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: gray;
+  background-color: #FAF9FE;
+  position: relative;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper-slide .slider_card {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 24px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 10px;
+  margin-top: 24px;
+  margin-right: 40px;
+  -webkit-box-shadow: 0px 6px 20px 0px rgba(196, 196, 196, 0.27);
+          box-shadow: 0px 6px 20px 0px rgba(196, 196, 196, 0.27);
+}
+
+.swiper-slide .slider_card .author_image {
+  width: 140px;
+  height: 140px;
+  margin: 16px 0;
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+
+.swiper-pagination {
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 20px;
+  padding: 4px;
+  width: 12% !important;
+  left: 45% !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: #ea4c89;
+  width: 12px;
+  height: 12px;
+  margin: 0 8px !important;
 }
 
 .swiper-button-next,
@@ -3886,40 +4006,33 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 100%;
-}
-
-.filter_nav_holder .filter_nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 40px 0;
 }
 
-.filter_nav_holder .filter_nav .filter_views .dropdown_button {
-  position: relative;
+.filter_nav_holder .filter_views .dropdown_button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 8px 16px;
+  border: solid 2px #ea4c89;
+  border-radius: 10px;
 }
 
-.filter_nav_holder .filter_nav .filter_views .arrow {
+.filter_nav_holder .filter_views .dropdown_button .arrow {
   margin-left: 16px;
 }
 
-.filter_nav_holder .filter_categories ul {
+.filter_categories ul {
   list-style: none;
   padding: 0;
   display: -webkit-box;
@@ -3927,21 +4040,33 @@ html {
   display: flex;
 }
 
-.filter_nav_holder .filter_categories ul .category {
-  padding: 8px;
-  margin-right: 24px;
+.filter_categories ul .category {
+  padding: 8px 16px;
+  border-radius: 10px;
 }
 
-.filter_nav_holder .filter_settigns .filter_button {
+.filter_categories ul .category.active {
+  background-color: #facfdf;
+}
+
+.filter_categories ul .category.active a {
+  color: black;
+}
+
+.filter_settigns .filter_button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 8px 16px;
+  background-color: #fafafa;
+  border: solid 2px #dbdbdb;
+  border-radius: 10px;
 }
 
-.filter_nav_holder .filter_settigns .filter_button .filter {
+.filter_settigns .filter_button .filter {
   margin-left: 16px;
 }
 
@@ -3965,19 +4090,27 @@ html {
   width: 100%;
   height: 300px;
   background-color: whitesmoke;
+  border-radius: 0 30px 30px 30px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 6px 20px 0px rgba(196, 196, 196, 0.27);
+          box-shadow: 0px 6px 20px 0px rgba(196, 196, 196, 0.27);
 }
 
 .home_grid .home_grid_holder .card .image .image_hover {
   position: absolute;
-  background-color: rgba(212, 41, 41, 0.192);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(234, 76, 137, 0.773845)), color-stop(90%, rgba(0, 207, 255, 0.101576)));
+  background: linear-gradient(0deg, rgba(234, 76, 137, 0.773845) 0%, rgba(0, 207, 255, 0.101576) 90%);
+  border-radius: 0 30px 30px 30px;
+  overflow: hidden;
   top: 0;
-  bottom: 0;
   left: 0;
+  bottom: 0;
   right: 0;
+  display: none;
 }
 
 .home_grid .home_grid_holder .card .image .image_hover .image_hover_content {
-  padding: 8px;
+  padding: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3987,6 +4120,14 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.home_grid .home_grid_holder .card .image .image_hover .image_hover_content .project_name {
+  color: white;
 }
 
 .home_grid .home_grid_holder .card .image .image_hover .image_hover_content .icons {
@@ -3995,18 +4136,36 @@ html {
   display: flex;
 }
 
+.home_grid .home_grid_holder .card .image .image_hover .image_hover_content .icons .folder {
+  font-size: 20px;
+  color: grey;
+}
+
 .home_grid .home_grid_holder .card .image .image_hover .image_hover_content .icons .folder .fa {
-  padding: 8px;
+  padding: 12px;
   background-color: white;
   border-radius: 10px;
   margin-right: 8px;
 }
 
+.home_grid .home_grid_holder .card .image .image_hover .image_hover_content .icons .heart {
+  font-size: 20px;
+  color: grey;
+}
+
 .home_grid .home_grid_holder .card .image .image_hover .image_hover_content .icons .heart .fa {
   text-align: center center;
-  padding: 8px;
+  padding: 12px;
   background-color: white;
   border-radius: 10px;
+}
+
+.home_grid .home_grid_holder .card .image .image_hover .image_hover_content .icons .folder:hover, .home_grid .home_grid_holder .card .image .image_hover .image_hover_content .icons .heart:hover {
+  color: #ea4c89;
+}
+
+.home_grid .home_grid_holder .card .image:hover > .image_hover {
+  display: block;
 }
 
 .home_grid .home_grid_holder .card .details {
@@ -4016,6 +4175,7 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 16px 8px;
 }
 
 .home_grid .home_grid_holder .card .details .author {
@@ -4034,6 +4194,32 @@ html {
   border-radius: 50%;
 }
 
+.home_grid .home_grid_holder .card .details .author .author_name {
+  margin: 0 16px;
+}
+
+.home_grid .home_grid_holder .card .details .author .badge_pro {
+  margin-right: 8px;
+  padding: 0.8px 4px;
+  background-color: lightgray;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.home_grid .home_grid_holder .card .details .author .badge_team {
+  margin-right: 8px;
+  padding: 0.8px 4px;
+  background-color: lightgray;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .home_grid .home_grid_holder .card .details .statistics {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4049,10 +4235,37 @@ html {
   display: flex;
 }
 
+.home_grid .home_grid_holder .card .details .statistics .likes .heart {
+  margin-right: 8px;
+  color: grey;
+}
+
+.home_grid .home_grid_holder .card .details .statistics .likes p {
+  font-size: 12px;
+}
+
+.home_grid .home_grid_holder .card .details .statistics .likes .heart:hover {
+  color: #ea4c89;
+}
+
 .home_grid .home_grid_holder .card .details .statistics .views {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 16px;
+}
+
+.home_grid .home_grid_holder .card .details .statistics .views .eye {
+  margin-right: 8px;
+  color: grey;
+}
+
+.home_grid .home_grid_holder .card .details .statistics .views p {
+  font-size: 12px;
+}
+
+.home_grid .home_grid_holder .card .details .statistics .views .eye:hover {
+  color: #ea4c89;
 }
 
 footer {
@@ -4065,8 +4278,8 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 16px;
   width: 100%;
+  background-color: #fafafa;
 }
 
 footer .footer_holder {
@@ -4078,29 +4291,36 @@ footer .footer_holder .footer_main_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 64px 0;
 }
 
-footer .footer_holder .footer_main_content .brand img {
-  width: 100px;
+footer .footer_holder .footer_main_content .brand a svg {
+  color: #ea4c89;
 }
 
 footer .footer_holder .footer_main_content .brand p {
-  width: 35ch;
+  width: 25ch;
 }
 
 footer .footer_holder .footer_main_content .brand .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 24px;
 }
 
 footer .footer_holder .footer_main_content .brand .social a {
-  margin-right: 8px;
-  font-size: 24px;
+  margin-right: 16px;
+  font-size: 20px;
+  color: #3b3b3b;
 }
 
 footer .footer_holder .footer_main_content .brand .social a .fa {
   font-size: 24px;
+}
+
+footer .footer_holder .footer_main_content .brand .social a:hover {
+  color: black;
 }
 
 footer .footer_holder .footer_main_content .links {
@@ -4110,7 +4330,13 @@ footer .footer_holder .footer_main_content .links {
 }
 
 footer .footer_holder .footer_main_content .links .column {
-  margin-left: 32px;
+  margin-left: 64px;
+}
+
+footer .footer_holder .footer_main_content .links .column header .label {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 footer .footer_holder .footer_main_content .links .column ul {
@@ -4118,17 +4344,29 @@ footer .footer_holder .footer_main_content .links .column ul {
   padding: 0;
 }
 
+footer .footer_holder .footer_main_content .links .column ul .link {
+  margin: 16px 0;
+}
+
+footer .footer_holder .footer_main_content .links .column ul .link a {
+  font-size: 14px;
+}
+
 footer .footer_holder .footer_lower_content {
+  border-top: solid 1px #e6e6e6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 40px 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: grey;
 }
 
 footer .footer_holder .footer_lower_content .copy {
   margin: 0;
+  font-size: 14px;
 }
 
 footer .footer_holder .footer_lower_content .dribbbled {
@@ -4139,21 +4377,24 @@ footer .footer_holder .footer_lower_content .dribbbled {
 
 footer .footer_holder .footer_lower_content .dribbbled p {
   margin: 0;
+  font-size: 14px;
+}
+
+footer .footer_holder .footer_lower_content .dribbbled p span {
+  font-family: "Neue-Bold";
+  color: black;
 }
 
 footer .footer_holder .footer_lower_content .dribbbled img {
+  margin-left: 8px;
   width: 24px;
   height: 24px;
-}
-
-* {
-  border: 1px solid #ea4c89;
 }
 
 html,
 body {
   font-size: 16px;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Neue-Roman", "Helvetica", sans-serif;
   line-height: 24px;
   color: #333;
   min-height: 100vh;
@@ -4197,11 +4438,13 @@ h6 {
 p {
   font-size: 16px;
   line-height: 24px;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: grey;
+  font-size: 14px;
 }
 
 a:hover {
@@ -4214,7 +4457,15 @@ ul {
   margin: 0;
 }
 
-p {
-  margin: 0;
+.boton {
+  padding: 8px 12px;
+  color: white;
+  font-weight: bold;
+  background-color: #ea4c89;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: .5px;
 }
 /*# sourceMappingURL=main.css.map */

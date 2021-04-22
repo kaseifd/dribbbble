@@ -16,58 +16,21 @@
 
 .filter_nav_holder {
     display: flex;
-    flex-direction: column;
     width: 100%;
-    .filter_nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .filter_views {
-            .dropdown_button {
-                position: relative;
-                display: flex;
-                justify-content: space-between;
+    justify-content: space-between;
+    align-items: center;
+    margin: $base * 5 0;
 
-                p {
-                }
-            }
-            .arrow {
-                margin-left: $base * 2;
-                .fa {
-                }
-            }
-
-            // .dropdown_options {
-            //     position: absolute;
-            //     padding: $base * 2;
-            //     border-radius: 10px;
-            //     background-color: whitesmoke;
-            //     width: 150px;
-
-            //     .option {
-            //     }
-            // }
-        }
-    }
-    .filter_categories {
-        ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            .category {
-                padding: $base;
-                margin-right: $base * 3;
-            }
-        }
-    }
-    .filter_settigns {
-        .filter_button {
+    .filter_views {
+        .dropdown_button {
             display: flex;
             justify-content: space-between;
-
+            padding: $base $base * 2;
+            border: solid 2px $corporateColor;
+            border-radius: 10px;
             .label {
             }
-            .filter {
+            .arrow {
                 margin-left: $base * 2;
                 .fa {
                 }
@@ -75,9 +38,48 @@
         }
     }
 }
+.filter_categories {
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        .category {
+            padding: $base $base * 2;
+            border-radius: 10px;
+            &.active {
+                background-color: #facfdf;
+                
+                a{
+                    color: black;
+                }
+                
+            }
+        }
+    }
+}
+
+.filter_settigns {
+    .filter_button {
+        display: flex;
+            justify-content: space-between;
+            padding: $base $base * 2;
+            background-color:rgb(250, 250, 250);
+            border: solid 2px rgb(219, 219, 219);
+            border-radius: 10px;
+
+        .label {
+        }
+        .filter {
+            margin-left: $base * 2;
+            .fa {
+            }
+        }
+    }
+}
 
 .home_grid {
     width: 100%;
+    
     .home_grid_holder {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -85,54 +87,83 @@
         .card {
             .image {
                 position: relative;
+                
                 img {
                     width: 100%;
                     height: 300px;
                     background-color: whitesmoke;
+                    border-radius: 0 30px 30px 30px;
+                    overflow: hidden;
+                    box-shadow: 0px 6px 20px 0px rgba(196,196,196,0.27);
                 }
                 .image_hover {
                     position: absolute;
-                    background-color: rgba(212, 41, 41, 0.192);
-
+                    background: linear-gradient(0deg, rgba(234,76,137,0.7738445720084909) 0%, rgba(0,207,255,0.10157566444546573) 90%);
+                    border-radius: 0 30px 30px 30px;
+                    overflow: hidden;
                     top: 0;
-                    bottom: 0;
                     left: 0;
+                    bottom: 0;
                     right: 0;
+                    display: none;
+                    
+                    
 
                     .image_hover_content {
-                        padding: $base;
+                        padding: $base * 3;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
 
                         .project_name {
+                            color: white;
                         }
                         .icons {
                             display: flex;
 
                             .folder {
+                                font-size: 20px;
+                                color: grey;
                                 .fa {
-                                    padding: $base;
+                                    padding: $base * 1.5;
                                     background-color: white;
                                     border-radius: 10px;
                                     margin-right: $base;
                                 }
                             }
                             .heart {
+                                font-size: 20px;
+                                color: grey;
                                 .fa {
+                                    
                                     text-align: center center;
-                                    padding: $base;
+                                    padding: $base * 1.5;
                                     background-color: white;
                                     border-radius: 10px;
                                 }
                             }
+
+                            .folder:hover, .heart:hover{
+                                color: $corporateColor;
+                            }
                         }
                     }
                 }
+
+               
+            }
+            .image:hover > .image_hover{
+                display: block;
+                
             }
             .details {
                 display: flex;
                 justify-content: space-between;
+                padding: $base * 2 $base;
                 .author {
                     display: flex;
                     align-items: center;
@@ -143,10 +174,27 @@
                         border-radius: 50%;
                     }
                     .author_name {
+                        margin: 0 $base * 2;
                     }
                     .badge_pro {
+                        margin-right: $base;
+                        padding: $base *.1 $base *.5;
+                        background-color: rgb(211, 211, 211);
+                        color: white;
+                        border-radius: 5px;
+                        font-size: $small;
+                        font-weight: $ui_bold;
+                        text-transform: uppercase;
                     }
                     .badge_team {
+                        margin-right: $base;
+                        padding: $base *.1 $base *.5;
+                        background-color: rgb(211, 211, 211);
+                        color: white;
+                        border-radius: 5px;
+                        font-size: $small;
+                        font-weight: $ui_bold;
+                        text-transform: uppercase;
                     }
                 }
                 .statistics {
@@ -155,19 +203,33 @@
                     .likes {
                         display: flex;
                         .heart {
+                            margin-right: $base;
+                            color: grey;
                             .fa {
                             }
                         }
                         p {
+                            font-size: $small;
+                        }
+
+                        .heart:hover{
+                            color: $corporateColor;
                         }
                     }
                     .views {
                         display: flex;
+                        margin-left: $base * 2;
                         .eye {
+                            margin-right: $base;
+                            color: grey;
                             .fa {
                             }
                         }
                         p {
+                            font-size: $small;
+                        }
+                        .eye:hover{
+                            color: $corporateColor;
                         }
                     }
                 }
