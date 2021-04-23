@@ -23,3 +23,12 @@ const mySwiper = new Swiper('.swiper-container', {
             prevEl: '.swiper-button-prev',
     }     
 });
+
+
+
+
+tippy('.hasToolTip', {
+        content: 'Click to see project' 
+}); 
+
+

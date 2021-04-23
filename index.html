@@ -15,9 +15,12 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/main.css.map" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css" />
 </head>
 
 <body>
+
     <div class="dribbble">
         <!--HEADER-->
 
@@ -438,7 +441,8 @@
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide"><img src="assets/img/slider_0.png" alt="">
-                    <div class="slider_card">
+                    <div class="slider_card hasToolTip" data-tippy-placement="bottom">
+                        <div class="tippy-box"></div>                   
                         <div class="name">
                             <h3 class="name_project">
                                 Space Travel App
@@ -446,7 +450,7 @@
                             <p class="author">by <a href="#">Masud Rana</a></p>
                         </div>
                         <img src="" alt="" class="author_image">
-                        <a href="#" class="boton">See project</a>
+                        <!-- <a href="#" class="boton">See project</a>-->
                     </div>
                 </div>
                 <div class="swiper-slide">
@@ -550,7 +554,7 @@
 
 
 
-                
+
                 <!--GRID-->
                 <div class="home_grid">
                     <div class="home_grid_holder">
@@ -710,6 +714,8 @@
     </div>
 
     </div>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="app/anime.js/lib/anime.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
