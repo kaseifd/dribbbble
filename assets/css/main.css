@@ -3909,6 +3909,40 @@ html {
   position: relative;
 }
 
+.swiper-slide .text {
+  position: absolute;
+  width: 60ch;
+  text-align: center;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.swiper-slide .text .slider_description {
+  margin: 24px 0 32px 0;
+  width: 40ch;
+}
+
+.swiper-slide .text .boton:hover {
+  color: white;
+}
+
+.swiper-slide .text.first_slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .swiper-slide img {
   width: 100%;
 }
@@ -3940,6 +3974,7 @@ html {
   margin-right: 40px;
   -webkit-box-shadow: 0px 6px 20px 0px rgba(196, 196, 196, 0.27);
           box-shadow: 0px 6px 20px 0px rgba(196, 196, 196, 0.27);
+  max-width: 30ch;
 }
 
 .swiper-slide .slider_card .author_image {
@@ -3948,6 +3983,10 @@ html {
   margin: 16px 0;
   background-color: whitesmoke;
   border-radius: 50%;
+}
+
+.swiper-slide .slider_card.first_slide {
+  display: none;
 }
 
 .swiper-pagination {
@@ -4403,7 +4442,7 @@ body {
 h1 {
   font-size: 48px;
   line-height: 56px;
-  letter-spacing: -0.1rem;
+  margin: 0;
 }
 
 h2 {
