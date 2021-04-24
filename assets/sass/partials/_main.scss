@@ -48,11 +48,10 @@
             border-radius: 10px;
             &.active {
                 background-color: #facfdf;
-                
-                a{
+
+                a {
                     color: black;
                 }
-                
             }
         }
     }
@@ -61,11 +60,11 @@
 .filter_settigns {
     .filter_button {
         display: flex;
-            justify-content: space-between;
-            padding: $base $base * 2;
-            background-color:rgb(250, 250, 250);
-            border: solid 2px rgb(219, 219, 219);
-            border-radius: 10px;
+        justify-content: space-between;
+        padding: $base $base * 2;
+        background-color: rgb(250, 250, 250);
+        border: solid 2px rgb(219, 219, 219);
+        border-radius: 10px;
 
         .label {
         }
@@ -79,7 +78,7 @@
 
 .home_grid {
     width: 100%;
-    
+
     .home_grid_holder {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -87,18 +86,22 @@
         .card {
             .image {
                 position: relative;
-                
+
                 img {
                     width: 100%;
                     height: 300px;
                     background-color: whitesmoke;
                     border-radius: 0 30px 30px 30px;
                     overflow: hidden;
-                    box-shadow: 0px 6px 20px 0px rgba(196,196,196,0.27);
+                    box-shadow: 0px 6px 20px 0px rgba(196, 196, 196, 0.27); 
                 }
                 .image_hover {
                     position: absolute;
-                    background: linear-gradient(0deg, rgba(234,76,137,0.7738445720084909) 0%, rgba(0,207,255,0.10157566444546573) 90%);
+                    background: linear-gradient(
+                        0deg,
+                        rgba(234, 76, 137, 0.7738445720084909) 0%,
+                        rgba(0, 207, 255, 0.10157566444546573) 90%
+                    );
                     border-radius: 0 30px 30px 30px;
                     overflow: hidden;
                     top: 0;
@@ -106,8 +109,6 @@
                     bottom: 0;
                     right: 0;
                     display: none;
-                    
-                    
 
                     .image_hover_content {
                         padding: $base * 3;
@@ -139,7 +140,6 @@
                                 font-size: 20px;
                                 color: grey;
                                 .fa {
-                                    
                                     text-align: center center;
                                     padding: $base * 1.5;
                                     background-color: white;
@@ -147,55 +147,59 @@
                                 }
                             }
 
-                            .folder:hover, .heart:hover{
+                            .folder:hover,
+                            .heart:hover {
                                 color: $corporateColor;
                             }
                         }
                     }
                 }
-
-               
             }
-            .image:hover > .image_hover{
+            .image:hover > .image_hover {
                 display: block;
-                
             }
             .details {
                 display: flex;
                 justify-content: space-between;
                 padding: $base * 2 $base;
+
                 .author {
                     display: flex;
                     align-items: center;
-                    img {
-                        width: 40px;
-                        height: 40px;
-                        background-color: whitesmoke;
-                        border-radius: 50%;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        color: black;
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            background-color: whitesmoke;
+                            border-radius: 50%;
+                        }
+                        .author_name {
+                            margin: 0 $base * 2;
+                        }
                     }
-                    .author_name {
-                        margin: 0 $base * 2;
-                    }
-                    .badge_pro {
+
+                    .badge_pro, .badge_team {
                         margin-right: $base;
-                        padding: $base *.1 $base *.5;
+                        padding: $base * 0.1 $base * 0.5;
                         background-color: rgb(211, 211, 211);
                         color: white;
                         border-radius: 5px;
                         font-size: $small;
                         font-weight: $ui_bold;
                         text-transform: uppercase;
+
+                        &.no_pro{
+                            display: none;
+                        }
+                        
+                        &.no_team{
+                            display: none;
+                        }
                     }
-                    .badge_team {
-                        margin-right: $base;
-                        padding: $base *.1 $base *.5;
-                        background-color: rgb(211, 211, 211);
-                        color: white;
-                        border-radius: 5px;
-                        font-size: $small;
-                        font-weight: $ui_bold;
-                        text-transform: uppercase;
-                    }
+    
                 }
                 .statistics {
                     display: flex;
@@ -212,7 +216,7 @@
                             font-size: $small;
                         }
 
-                        .heart:hover{
+                        .heart:hover {
                             color: $corporateColor;
                         }
                     }
@@ -228,7 +232,7 @@
                         p {
                             font-size: $small;
                         }
-                        .eye:hover{
+                        .eye:hover {
                             color: $corporateColor;
                         }
                     }

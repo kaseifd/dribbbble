@@ -44,11 +44,9 @@
                     }
                 }
             }
-            .inspiration_subnav,
-            .find_work_subnav,
-            .hire_subnav {
+            .subnav
+             {
                 overflow: hidden;
-                display: flex;
                 position: absolute;
                 top: 40px;
                 background-color: white;
@@ -59,7 +57,7 @@
                 // background-color: rgba(255, 255, 255, 0.5);
                 // backdrop-filter: blur(6px);
 
-                &opened {
+                &.opened {
                     display: flex;
                 }
 

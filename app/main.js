@@ -2,6 +2,8 @@ window.addEventListener('load', () => {
         renderSlider();
         swiper();
         tooltip();
+        submenu();
+        renderGrid();
 
 
 
@@ -106,6 +108,129 @@ const renderSlider = () => {
         }
 
 }
+
+
+const submenu = () => {
+        const header = document.querySelector('.header');
+        const subnavs = document.querySelectorAll(".subnav")
+        const navButtons = document.querySelectorAll(".header_navigation_item");
+
+
+        const openSubmenu = () => {
+                navButtons[0].addEventListener("click", () => {
+                        subnavs[0].classList.toggle("opened")
+                })
+
+                navButtons[1].addEventListener("click", () => {
+                        subnavs[1].classList.toggle("opened")
+                })
+
+                navButtons[4].addEventListener("click", () => {
+                        subnavs[2].classList.toggle("opened")
+                })
+
+
+                //con hover (yo prefiero hover :3)
+
+                // navButtons[0].addEventListener("mouseenter", () =>{
+                //         subnavs[0].classList.toggle("opened")
+                // })
+
+                // navButtons[1].addEventListener("mouseenter", () =>{
+                //         subnavs[1].classList.toggle("opened")
+                // })
+
+                // navButtons[4].addEventListener("mouseenter", () =>{
+                //         subnavs[2].classList.toggle("opened")
+                // })
+        }
+
+
+        const closeSubmenu = () => {
+                header.addEventListener("mouseleave", () => {
+                        subnavs.forEach(subnav => {
+                                subnav.classList.remove("opened");
+                        })
+                });
+
+
+                window.addEventListener("scroll", () => {
+                        subnavs.forEach(subnav => {
+                                subnav.classList.remove("opened");
+                        })
+                });
+        }
+
+
+        openSubmenu();
+        closeSubmenu();
+
+};
+
+
+
+const renderGrid = () => {
+        const gridHolder = document.querySelector(".home_grid_holder")
+        let htmlString = ""
+
+        for (let i = 0; i < home.grid.length; i++) {
+                const cardHTMLString =
+                `<div class="card">
+                        <div class="image">
+                            <img src="${home.grid[i].img}" alt="${home.grid[i].project}">
+                            <div class="image_hover">
+                                <div class="image_hover_content">
+                                    <h4 class="project_name">${home.grid[i].project}</h4>
+                                    <div class="icons">
+                                        <div class="folder">
+                                            <div class="fa fa-folder"></div>
+                                        </div>
+                                        <div class="heart">
+                                            <div class="fa fa-heart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details">
+                            <div class="author">
+                                <a href="${home.grid[i].details.author.link}">
+                                        <img src="${home.grid[i].details.author.img}" alt="${home.grid[i].details.author.name}">
+                                        <h5 class="author_name">${home.grid[i].details.author.name}</h5>
+                                </a>
+                                <div class="badge_pro">Pro</div>
+                                <div class="badge_team">Team</div>
+                            </div>
+                            <div class="statistics">
+                                <div class="likes">
+                                    <div class="heart">
+                                        <div class="fa fa-heart"></div>
+                                    </div>
+                                    <p>${home.grid[i].details.statistics.likes}</p>
+                                </div>
+                                <div class="views">
+                                    <div class="eye">
+                                        <div class="fa fa-eye"></div>
+                                    </div>
+                                    <p>${home.grid[i].details.statistics.views}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+                htmlString += cardHTMLString;
+        }
+
+        gridHolder.innerHTML = htmlString
+
+}
+
+
+
+
+
+
+
+
 
 
 

@@ -68,5 +68,164 @@ const home = {
             },
             text: false,
         }
+    ],
+
+    grid: [
+        {
+            img: "assets/img/grid_1.png",
+            link:"https://dribbble.com/shots/15535685-Curology-Mobile-Responsive",
+            project:"Curology - Mobile Responsive",
+            details: {
+                author: {
+                    img: "https://cdn.dribbble.com/users/2554837/avatars/normal/90522438af4feba5ef21fe54cc40fec4.png?1559397767",
+                    name: "Orizon",
+                    link:"https://dribbble.com/farzanfaruk",
+                    pro: false,
+                    team: true,
+                },
+            statistics: {
+                    likes: "93",
+                    views: "7.7k",
+                },
+            },
+        },
+
+        {
+            img: "assets/img/grid_2.jpg",
+            link:"https://dribbble.com/shots/15534704-Chat-Bot-Apps",
+            project:"Chat Bot Apps",
+            details: {
+                author: {
+                    img: "https://cdn.dribbble.com/users/6567474/avatars/normal/b849c692c6c9fc9cfdca178b90e354d2.png?1607746416",
+                    name: "Vektora",
+                    link:"https://dribbble.com/vektora",
+                    pro: false,
+                    team: true,
+                },
+            statistics: {
+                    likes: "97",
+                    views: "11.4k",
+                },
+            },
+        },
+
+        {
+            img: "assets/img/grid_3.png",
+            link:"https://dribbble.com/shots/15535514-Event-App",
+            project:"Event App",
+            details: {
+                author: {
+                    img: "https://cdn.dribbble.com/users/6682392/avatars/normal/502b53a48f28a72de58827be423a803f.png?1612955220",
+                    name: "Orix Agency",
+                    link:"https://dribbble.com/orix_agency",
+                    pro: false,
+                    team: true,
+                },
+            statistics: {
+                    likes: "83",
+                    views: "7.6k",
+                },
+            },
+        },
+
+        {
+            img: "assets/img/grid_4.jpg",
+            link:"https://dribbble.com/shots/15535605-Explore",
+            project:"Explore",
+            details: {
+                author: {
+                    img: "https://cdn.dribbble.com/users/1068771/avatars/normal/f2fda285ed10ab9c47adff8048ba9964.jpg?1564587475",
+                    name: "Dmitry Mòói",
+                    link:"https://dribbble.com/dmitrymoi",
+                    pro: true,
+                    team: false,
+                },
+            statistics: {
+                    likes: "47",
+                    views: "4.5k",
+                },
+            },
+        },
+
+        {
+            img: "assets/img/grid_5.png",
+            link:"https://dribbble.com/shots/15533159-WeCare-Medical-Landing-Page",
+            project:"WeCare - Medical Landing Page",
+            details: {
+                author: {
+                    img: "https://cdn.dribbble.com/users/1667332/avatars/normal/edd45777913e5de4434a1a1b812c76cf.png?1566878129",
+                    name: "One Week Wonders",
+                    link:"https://dribbble.com/OWWStudio",
+                    pro: false,
+                    team: true,
+                },
+            statistics: {
+                    likes: "140",
+                    views: "20.1k",
+                },
+            },
+        },
+
+        {
+            img: "assets/img/grid_6.jpg",
+            link:"https://dribbble.com/shots/15535978-Totem",
+            project:"Totem",
+            details: {
+                author: {
+                    img: "https://cdn.dribbble.com/users/59947/avatars/normal/5ed2865a861fcd2bc9f9d9aff7600f8b.jpg?1574070463",
+                    name: "MUTI",
+                    link:"https://dribbble.com/studioMUTI",
+                    pro: true,
+                    team: false,
+                },
+            statistics: {
+                    likes: "62",
+                    views: "5.1k",
+                },
+            },
+        },
+
+        {
+            img: "assets/img/grid_7.png",
+            link:"https://dribbble.com/shots/15531167-Doku-Digital-Wallet-App",
+            project:"Doku - Digital Wallet App ",
+            details: {
+                author: {
+                    img: "https://cdn.dribbble.com/users/7150929/avatars/normal/6a490c937a67f8a9e8eacfdcf5e5e36c.jpg?1614257178",
+                    name: "Drawstack",
+                    link:"https://dribbble.com/drawstack",
+                    pro: false,
+                    team: true,
+                },
+            statistics: {
+                    likes: "131",
+                    views: "17.2k",
+                },
+            },
+        },
+
+        {
+            img: "assets/img/grid_8.jpeg",
+            link:"https://dribbble.com/shots/15535853-Raster-or-vector",
+            project:"Raster or vector?",
+            details: {
+                author: {
+                    img: "https://cdn.dribbble.com/users/2187949/avatars/normal/c29deaf976053c7065aaf215635c86a5.jpg?1592843232",
+                    name: "Maryia Nestsiarovich",
+                    link:"https://dribbble.com/nickvector",
+                    pro: true,
+                    team: false,
+                },
+            statistics: {
+                    likes: "124",
+                    views: "12k",
+                },
+            },
+        },
+
+
+
+        
+
     ]
 }
