@@ -3677,14 +3677,7 @@ template {
 }
 
 .header .header_holder .header_ctas .boton {
-  padding: 8px 12px;
   color: white;
-  font-weight: bold;
-  background-color: #ea4c89;
-  font-size: 14px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
 }
 
 :root {
@@ -3888,11 +3881,19 @@ html {
 
 .filter_categories ul .category {
   padding: 8px 16px;
+  margin: 0 8px;
   border-radius: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
 }
 
 .filter_categories ul .category.active {
-  background-color: #facfdf;
+  border: solid 1px #ea4c89;
+  color: #ea4c89;
+  font-weight: bold;
 }
 
 .filter_categories ul .category.active a {
@@ -3944,8 +3945,8 @@ html {
 
 .home_grid .home_grid_holder .card .image .image_hover {
   position: absolute;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(234, 76, 137, 0.773845)), color-stop(90%, rgba(0, 207, 255, 0.101576)));
-  background: linear-gradient(0deg, rgba(234, 76, 137, 0.773845) 0%, rgba(0, 207, 255, 0.101576) 90%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#ea4c89), to(rgba(0, 208, 255, 0)));
+  background: linear-gradient(0deg, #ea4c89 0%, rgba(0, 208, 255, 0) 100%);
   border-radius: 0 30px 30px 30px;
   overflow: hidden;
   top: 0;
@@ -4120,6 +4121,10 @@ html {
 
 .home_grid .home_grid_holder .card .details .statistics .views .eye:hover {
   color: #ea4c89;
+}
+
+.home_grid .home_grid_holder .card.hidden {
+  display: none;
 }
 
 footer {
@@ -4317,9 +4322,15 @@ ul {
   font-weight: bold;
   background-color: #ea4c89;
   font-size: 14px;
-  border-radius: 5px;
-  border: none;
+  border-radius: 10px;
+  border: solid 1px transparent;
   cursor: pointer;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
+}
+
+.boton:hover {
+  border: solid 1px #ea4c89;
+  background-color: transparent;
+  color: #ea4c89 !important;
 }
 /*# sourceMappingURL=main.css.map */

@@ -4,9 +4,8 @@ window.addEventListener('load', () => {
         tooltip();
         submenu();
         renderGrid();
-
-
-
+        renderGridMenu();
+        gridMenuEvents();
 
 });
 
@@ -167,6 +166,21 @@ const submenu = () => {
 
 };
 
+//para cortar los titulos
+const shortenTitle = (project) => {
+        const projectArr = project.split(" ").slice(0, 5).join(" ") + "..."
+
+
+        return projectArr
+}
+
+
+//categorías
+
+const createCategories = (categories) => {
+        return categories.join(" ");
+
+}
 
 
 const renderGrid = () => {
@@ -175,12 +189,12 @@ const renderGrid = () => {
 
         for (let i = 0; i < home.grid.length; i++) {
                 const cardHTMLString =
-                `<div class="card">
+                        `<div class="card ${createCategories(home.grid[i].categories)} ">
                         <div class="image">
                             <img src="${home.grid[i].img}" alt="${home.grid[i].project}">
                             <div class="image_hover">
                                 <div class="image_hover_content">
-                                    <h4 class="project_name">${home.grid[i].project}</h4>
+                                    <h4 class="project_name">${shortenTitle(home.grid[i].project)}</h4>
                                     <div class="icons">
                                         <div class="folder">
                                             <div class="fa fa-folder"></div>
@@ -198,8 +212,8 @@ const renderGrid = () => {
                                         <img src="${home.grid[i].details.author.img}" alt="${home.grid[i].details.author.name}">
                                         <h5 class="author_name">${home.grid[i].details.author.name}</h5>
                                 </a>
-                                <div class="badge_pro">Pro</div>
-                                <div class="badge_team">Team</div>
+                                <div class="badge_pro ${home.grid[i].details.author.pro ? "" : "no_pro"}">Pro</div>
+                                <div class="badge_team ${home.grid[i].details.author.team ? "" : "no_team"}">Team</div>
                             </div>
                             <div class="statistics">
                                 <div class="likes">
@@ -221,6 +235,83 @@ const renderGrid = () => {
         }
 
         gridHolder.innerHTML = htmlString
+
+
+}
+
+
+const getSingleCategories = () => {
+        const categories = home.grid.map(gridItem => gridItem.categories)
+        const uniqueCategories = []
+
+        categories.forEach(categoryArr => {
+                categoryArr.forEach(category => {
+                        if (!uniqueCategories.includes(category)) {
+                                uniqueCategories.push(category)
+
+                        }
+                })
+
+        })
+        
+        uniqueCategories.sort()
+
+        return uniqueCategories;
+
+}
+
+
+const renderGridMenu = () => {
+        const filtersCategories = document.querySelector(".filter_categories ul")
+        let htmlString = ""
+        const categories = getSingleCategories();
+        categories.unshift("All")
+        categories.forEach(category => {
+                htmlString += `
+                <li class="category ${category == "All" ? "active" : ""} " data-category = "${category}">${category}</li>
+                `
+                
+        
+        })
+
+
+        filtersCategories.innerHTML = htmlString
+
+       
+}
+
+
+const gridMenuEvents = () => {
+        const filterButtons = document.querySelectorAll(".filter_categories ul .category")
+        const cards = document.querySelectorAll(".card")
+
+
+        filterButtons.forEach(filterButton => {
+                filterButton.addEventListener("click", () => {
+                        const category = filterButton.dataset.category;
+                        
+                        cards.forEach(card => {
+                                if (card.classList.contains(category)) {
+                                        card.classList.remove("hidden")
+                                        
+                                } else{
+                                        card.classList.add("hidden")
+                                }
+                        })
+                        if (category == "All") {
+                                cards.forEach(card => {
+                                        card.classList.remove("hidden")
+                                        
+                                });     
+                        }
+
+                        filterButtons.forEach(filterBut => {
+                                filterBut.classList.remove("active")
+                                
+                        });
+                        filterButton.classList.add("active")
+                })
+        })
 
 }
 

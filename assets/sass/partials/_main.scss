@@ -43,11 +43,20 @@
         list-style: none;
         padding: 0;
         display: flex;
+     
         .category {
             padding: $base $base * 2;
+            margin: 0 $base;
             border-radius: 10px;
+            user-select: none;
+            cursor: pointer;
+            
             &.active {
-                background-color: #facfdf;
+                
+                border: solid 1px $corporateColor;
+                color: $corporateColor;
+                font-weight: $ui_bold;
+
 
                 a {
                     color: black;
@@ -99,8 +108,8 @@
                     position: absolute;
                     background: linear-gradient(
                         0deg,
-                        rgba(234, 76, 137, 0.7738445720084909) 0%,
-                        rgba(0, 207, 255, 0.10157566444546573) 90%
+                        rgb(234, 76, 137) 0%,
+                        rgba(0, 208, 255, 0) 100%
                     );
                     border-radius: 0 30px 30px 30px;
                     overflow: hidden;
@@ -237,6 +246,9 @@
                         }
                     }
                 }
+            }
+            &.hidden{
+                display: none;
             }
         }
     }
