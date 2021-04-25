@@ -125,10 +125,12 @@
     width: 100%;
 
     .home_grid_holder {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: $base * 3;
+        // display: grid;
+        // grid-template-columns: 1fr 1fr 1fr;
+        // grid-gap: $base * 3;
         .card {
+            width: calc(100%/3);
+            padding: $base * 2;
             .image {
                 position: relative;
 

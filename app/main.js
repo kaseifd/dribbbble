@@ -12,8 +12,11 @@ window.addEventListener('load', () => {
         submenuEvents();
         gridMenuEvents();
         search();
+        masonry()
 
 });
+
+let iso = null
 
 
 
@@ -295,20 +298,28 @@ const gridMenuEvents = () => {
         filterButtons.forEach(filterButton => {
                 filterButton.addEventListener("click", () => {
                         const category = filterButton.dataset.category;
+                        // filtros sin isotope
+                        // cards.forEach(card => {
+                        //         if (card.classList.contains(category)) {
+                        //                 card.classList.remove("hidden")
 
-                        cards.forEach(card => {
-                                if (card.classList.contains(category)) {
-                                        card.classList.remove("hidden")
+                        //         } else {
+                        //                 card.classList.add("hidden")
+                        //         }
+                        // })
 
-                                } else {
-                                        card.classList.add("hidden")
-                                }
-                        })
+                        // if (category == "All") {
+                        //         cards.forEach(card => {
+                        //                 card.classList.remove("hidden")
+
+                        //         });
+                        // }
+
+
                         if (category == "All") {
-                                cards.forEach(card => {
-                                        card.classList.remove("hidden")
-
-                                });
+                                iso.arrange({filter: "*"})
+                        } else{
+                                iso.arrange({filter: "." + category})
                         }
 
                         filterButtons.forEach(filterBut => {
@@ -359,6 +370,18 @@ const search = () => {
         }
 }
 
+
+// me daba problema el width random con el hover. he probado con margin top random asi -> style="margin-top: ${Math.floor((Math.random() * 50) - 10)}px", pero queda fatal :( 
+
+const masonry = () => {
+        const elem = document.querySelector('.home_grid_holder');
+        iso = new Isotope(elem, {
+                percentPosition: true,
+                layoutMode: 'masonry'
+        });
+
+
+}
 
 
 

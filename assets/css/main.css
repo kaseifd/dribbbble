@@ -3967,12 +3967,9 @@ html {
   width: 100%;
 }
 
-.home_grid .home_grid_holder {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 24px;
+.home_grid .home_grid_holder .card {
+  width: calc(100%/3);
+  padding: 16px;
 }
 
 .home_grid .home_grid_holder .card .image {
