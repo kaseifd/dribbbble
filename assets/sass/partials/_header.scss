@@ -44,8 +44,7 @@
                     }
                 }
             }
-            .subnav
-             {
+            .subnav {
                 overflow: hidden;
                 position: absolute;
                 top: 40px;
@@ -53,7 +52,7 @@
                 z-index: 2;
                 display: none;
                 border-radius: 20px;
-                box-shadow: 0px 6px 20px 0px rgba(196,196,196,0.27);
+                box-shadow: 0px 6px 20px 0px rgba(196, 196, 196, 0.27);
                 // background-color: rgba(255, 255, 255, 0.5);
                 // backdrop-filter: blur(6px);
 
@@ -65,7 +64,7 @@
                 .find_work_nav,
                 .hire_nav {
                     width: 350px;
-                    margin: $base*2;
+                    margin: $base * 2;
 
                     ul {
                         list-style: none;
@@ -88,13 +87,10 @@
                                         display: block;
                                         margin-left: $base * 2;
                                         color: black;
-                                        
-                                        
+
                                         .title {
                                             font-size: $ui_font_size;
-                                            
                                         }
-                                        
 
                                         .description {
                                             margin: 0;
@@ -102,7 +98,6 @@
                                             font-weight: normal;
                                             color: grey;
                                         }
-                                        
                                     }
                                 }
 
@@ -115,13 +110,9 @@
                         }
                         .inspiration_item:hover,
                         .find_work_item:hover,
-                        .hire_item:hover{
+                        .hire_item:hover {
                             background-color: $corporateColorOpacity;
-                            
-                            
                         }
-
-
 
                         // .hire_item:hover > .title, .inspiration_item:hover > .title, .find_work_item:hover > .title{
                         //     color: $corporateColor !important;
@@ -137,7 +128,7 @@
                     background-color: rgb(250, 250, 250);
                     .header_category_nav {
                         width: 150px;
-                        
+
                         .label {
                             color: black;
                             font-size: $ui_font_size;
@@ -146,35 +137,51 @@
                     ul {
                         list-style: none;
                         padding: 0;
-                        .category { 
+                        .category {
                             margin: $base * 2 0;
                             a {
-                               
-                                
                             }
-                            a:hover{
+                            a:hover {
                                 color: black;
                             }
                         }
                     }
                 }
             }
-
-           
         }
 
         .header_ctas {
             display: flex;
             align-items: center;
-            .search {
-                margin-right: $base * 3;
-                font-size: 20px;
-                color: rgb(172, 172, 172);
-                .fa {
+            .search_bar {
+                display: flex;
+                align-items: center;
+                
+                .input {
+                    margin-right: $base;
+                    display: none;
+                    border: solid 1px grey;
+                    border-radius: 10px;
+                    padding: $base;
+                   
+
+                    &.visible {
+                        display: flex;
+                    }
+                }
+                .search {
+                    margin-right: $base * 3;
+                    font-size: 20px;
+                    
+
+                    .fa {
+                        color: rgb(172, 172, 172) !important;
+                    }
                 }
             }
+
             .boton {
-               color: white;
+                color: white;
             }
         }
     }

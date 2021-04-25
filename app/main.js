@@ -1,11 +1,17 @@
 window.addEventListener('load', () => {
+
+        //renders
         renderSlider();
-        swiper();
-        tooltip();
-        submenu();
         renderGrid();
         renderGridMenu();
+
+
+        //funciones
+        swiper();
+        tooltip();
+        submenuEvents();
         gridMenuEvents();
+        search();
 
 });
 
@@ -109,7 +115,7 @@ const renderSlider = () => {
 }
 
 
-const submenu = () => {
+const submenuEvents = () => {
         const header = document.querySelector('.header');
         const subnavs = document.querySelectorAll(".subnav")
         const navButtons = document.querySelectorAll(".header_navigation_item");
@@ -253,7 +259,7 @@ const getSingleCategories = () => {
                 })
 
         })
-        
+
         uniqueCategories.sort()
 
         return uniqueCategories;
@@ -270,14 +276,14 @@ const renderGridMenu = () => {
                 htmlString += `
                 <li class="category ${category == "All" ? "active" : ""} " data-category = "${category}">${category}</li>
                 `
-                
-        
+
+
         })
 
 
         filtersCategories.innerHTML = htmlString
 
-       
+
 }
 
 
@@ -289,25 +295,25 @@ const gridMenuEvents = () => {
         filterButtons.forEach(filterButton => {
                 filterButton.addEventListener("click", () => {
                         const category = filterButton.dataset.category;
-                        
+
                         cards.forEach(card => {
                                 if (card.classList.contains(category)) {
                                         card.classList.remove("hidden")
-                                        
-                                } else{
+
+                                } else {
                                         card.classList.add("hidden")
                                 }
                         })
                         if (category == "All") {
                                 cards.forEach(card => {
                                         card.classList.remove("hidden")
-                                        
-                                });     
+
+                                });
                         }
 
                         filterButtons.forEach(filterBut => {
                                 filterBut.classList.remove("active")
-                                
+
                         });
                         filterButton.classList.add("active")
                 })
@@ -316,25 +322,42 @@ const gridMenuEvents = () => {
 }
 
 
+const search = () => {
+        const searchButtons = document.querySelectorAll(".fa-search")
+        const searchInputs = document.querySelectorAll(".input")
+        const cards = document.querySelectorAll(".card")
+
+        for (let a = 0; a < searchButtons.length; a++) {
+                searchButtons[a].addEventListener("click", () => {
+                        for (let i = 0; i < searchInputs.length; i++) {
+                                if (a == i) {
+                                        searchInputs[i].classList.add("visible")
+                                }
 
 
+                        }
+                })
 
+        }
 
+        for (let i = 0; i < searchInputs.length; i++) {
+                searchInputs[i].addEventListener("keyup", () => {
+                        const value = searchInputs[i].value;
+                        cards.forEach(card => {
+                                const project = card.querySelector(".project_name") //para buscar escribiendo mayusculas y minusculas
+                                const toLowerCase = project.innerHTML.toLowerCase() //para buscar escribiendo todo en minuscula
+                                const toUpperCase = project.innerHTML.toUpperCase() //para buscar escribiendo todo en mayuscula
+                                if (toLowerCase.includes(value) || toUpperCase.includes(value) || project.innerHTML.includes(value)) {
+                                        card.classList.remove("hidden")
 
+                                } else {
+                                        card.classList.add("hidden")
+                                }
+                        })
+                })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        }
+}
 
 
 

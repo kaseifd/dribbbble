@@ -3670,10 +3670,36 @@ template {
           align-items: center;
 }
 
-.header .header_holder .header_ctas .search {
+.header .header_holder .header_ctas .search_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header_holder .header_ctas .search_bar .input {
+  margin-right: 8px;
+  display: none;
+  border: solid 1px grey;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.header .header_holder .header_ctas .search_bar .input.visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .header_holder .header_ctas .search_bar .search {
   margin-right: 24px;
   font-size: 20px;
-  color: #acacac;
+}
+
+.header .header_holder .header_ctas .search_bar .search .fa {
+  color: #acacac !important;
 }
 
 .header .header_holder .header_ctas .boton {
@@ -3855,22 +3881,6 @@ html {
   margin: 40px 0;
 }
 
-.filter_nav_holder .filter_views .dropdown_button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 8px 16px;
-  border: solid 2px #ea4c89;
-  border-radius: 10px;
-}
-
-.filter_nav_holder .filter_views .dropdown_button .arrow {
-  margin-left: 16px;
-}
-
 .filter_categories ul {
   list-style: none;
   padding: 0;
@@ -3898,6 +3908,42 @@ html {
 
 .filter_categories ul .category.active a {
   color: black;
+}
+
+.search_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.search_bar .input {
+  margin-right: 8px;
+  display: none;
+  border: solid 1px grey;
+  border-radius: 10px;
+  padding: 8px;
+  background: transparent;
+  position: absolute;
+  right: 50px;
+}
+
+.search_bar .input.visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.search_bar .search {
+  margin-right: 24px;
+  font-size: 20px;
+}
+
+.search_bar .search .fa {
+  color: #acacac !important;
 }
 
 .filter_settigns .filter_button {
@@ -4332,5 +4378,10 @@ ul {
   border: solid 1px #ea4c89;
   background-color: transparent;
   color: #ea4c89 !important;
+}
+
+button {
+  border: none;
+  background-color: transparent;
 }
 /*# sourceMappingURL=main.css.map */
