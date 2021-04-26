@@ -82,9 +82,9 @@ const renderSlider = () => {
                         </div>
                         <div class="slider_card hasToolTip" data-tippy-placement="bottom">               
                             <div class="name">
-                                <h3 class="name_project"> <a href="${home.slider[i].card.link}"> ${home.slider[i].card.project}</a>
+                                <h2 class="name_project"> <a href="${home.slider[i].card.link}"> ${home.slider[i].card.project}</a>
                                 
-                                </h3>
+                                </h2>
                                 <p class="author">by <a href="${home.slider[i].card.author.link}">${home.slider[i].card.author.name}</a></p>
                             </div>
                             <a href="${home.slider[i].card.author.link}">
@@ -246,13 +246,13 @@ const renderGrid = () => {
         let htmlString = ""
 
         for (let i = 0; i < home.grid.length; i++) {
-                const cardHTMLString =
-                        `<div class="card ${createCategories(home.grid[i].categories)} ">
+                const cardHTMLString =`
+                <article class="card ${createCategories(home.grid[i].categories)} ">
                         <div class="image">
                             <img src="${home.grid[i].img}" alt="${home.grid[i].project}">
                             <div class="image_hover">
                                 <div class="image_hover_content">
-                                    <h4 class="project_name">${shortenTitle(home.grid[i].project)}</h4>
+                                    <h3 class="project_name">${shortenTitle(home.grid[i].project)}</h3>
                                     <div class="icons">
                                         <div class="folder">
                                             <div class="fa fa-folder"></div>
@@ -268,7 +268,7 @@ const renderGrid = () => {
                             <div class="author">
                                 <a href="${home.grid[i].details.author.link}">
                                         <img src="${home.grid[i].details.author.img}" alt="${home.grid[i].details.author.name}">
-                                        <h5 class="author_name">${home.grid[i].details.author.name}</h5>
+                                        <h4 class="author_name">${home.grid[i].details.author.name}</h4>
                                 </a>
                                 <div class="badge_pro ${home.grid[i].details.author.pro ? "" : "no_pro"}">Pro</div>
                                 <div class="badge_team ${home.grid[i].details.author.team ? "" : "no_team"}">Team</div>
@@ -288,7 +288,7 @@ const renderGrid = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>`;
+                </article>`;
                 htmlString += cardHTMLString;
         }
 
