@@ -57,6 +57,11 @@ const tooltip = () => {
                 content: 'Click to see project'
         });
 
+        tippy('.sliderButtons', {
+                content: 'You can also use the arrow keys',
+                
+        });
+
 }
 
 
@@ -77,12 +82,14 @@ const renderSlider = () => {
                         </div>
                         <div class="slider_card hasToolTip" data-tippy-placement="bottom">               
                             <div class="name">
-                                <h3 class="name_project">
-                                ${home.slider[i].card.project}
+                                <h3 class="name_project"> <a href="${home.slider[i].card.link}"> ${home.slider[i].card.project}</a>
+                                
                                 </h3>
                                 <p class="author">by <a href="${home.slider[i].card.author.link}">${home.slider[i].card.author.name}</a></p>
                             </div>
-                            <img src="${home.slider[i].card.author.img}" alt="" class="author_image">
+                            <a href="${home.slider[i].card.author.link}">
+                                <img src="${home.slider[i].card.author.img}" alt="${home.slider[i].card.author.name}" class="author_image"
+                                </a>
                             <!-- <a href="#" class="boton">See project</a>-->
                         </div>
                     </div>`;
@@ -122,6 +129,8 @@ const submenuEvents = () => {
         const header = document.querySelector('.header');
         const subnavs = document.querySelectorAll(".subnav")
         const navButtons = document.querySelectorAll(".header_navigation_item");
+        console.log(subnavs);
+
 
 
         const openSubmenu = () => {
@@ -138,19 +147,8 @@ const submenuEvents = () => {
                 })
 
 
-                //con hover (yo prefiero hover :3)
 
-                // navButtons[0].addEventListener("mouseenter", () =>{
-                //         subnavs[0].classList.toggle("opened")
-                // })
 
-                // navButtons[1].addEventListener("mouseenter", () =>{
-                //         subnavs[1].classList.toggle("opened")
-                // })
-
-                // navButtons[4].addEventListener("mouseenter", () =>{
-                //         subnavs[2].classList.toggle("opened")
-                // })
         }
 
 
@@ -167,8 +165,56 @@ const submenuEvents = () => {
                                 subnav.classList.remove("opened");
                         })
                 });
-        }
 
+
+                //no se como hacer que funcione con un bucle :(
+
+                // for (let i = 0; i < navButtons.length; i++) {
+                //         for (let a = 0; a < subnavs.length; a++) {
+                //                 window.addEventListener("click", (ev) => {
+                //                         if (!ev.path.includes(navButtons[i]) && !ev.path.includes(subnavs[a])) {
+                //                             subnavs[a].classList.remove("opened");
+                //                         }
+                //                     });
+
+
+                //         }
+
+                // }
+
+               
+
+                
+
+               
+
+                //solo he encontrado esta manera, pero me gustaria hacerlo de forma mas automatica :(
+
+                let i = 0
+                let a = 1
+                let b = 2
+                let c = 4
+
+
+                window.addEventListener("click", (ev) => {
+                        if (!ev.path.includes(subnavs[i]) && !ev.path.includes(navButtons[i])) {
+                                subnavs[i].classList.remove("opened");
+                        }
+                });
+
+                window.addEventListener("click", (ev) => {
+                        if (!ev.path.includes(subnavs[a]) && !ev.path.includes(navButtons[a])) {
+                                subnavs[a].classList.remove("opened");
+                        }
+                });
+
+                window.addEventListener("click", (ev) => {
+                        if (!ev.path.includes(subnavs[b]) && !ev.path.includes(navButtons[c])) {
+                                subnavs[b].classList.remove("opened");
+                        }
+                });
+
+        }
 
         openSubmenu();
         closeSubmenu();
@@ -177,10 +223,13 @@ const submenuEvents = () => {
 
 //para cortar los titulos
 const shortenTitle = (project) => {
-        const projectArr = project.split(" ").slice(0, 5).join(" ") + "..."
+        const projectArr = project.split(" ")
+        if (projectArr.length > 4) {
+                return projectArr.slice(0, 4).join(" ") + "..."
 
-
-        return projectArr
+        } else {
+                return projectArr.join(" ")
+        }
 }
 
 
@@ -280,24 +329,22 @@ const renderGridMenu = () => {
                 <li class="category ${category == "All" ? "active" : ""} " data-category = "${category}">${category}</li>
                 `
 
-
         })
 
 
         filtersCategories.innerHTML = htmlString
-
-
 }
 
 
 const gridMenuEvents = () => {
         const filterButtons = document.querySelectorAll(".filter_categories ul .category")
-        const cards = document.querySelectorAll(".card")
+        // const cards = document.querySelectorAll(".card")
 
 
         filterButtons.forEach(filterButton => {
                 filterButton.addEventListener("click", () => {
                         const category = filterButton.dataset.category;
+
                         // filtros sin isotope
                         // cards.forEach(card => {
                         //         if (card.classList.contains(category)) {
@@ -317,9 +364,9 @@ const gridMenuEvents = () => {
 
 
                         if (category == "All") {
-                                iso.arrange({filter: "*"})
-                        } else{
-                                iso.arrange({filter: "." + category})
+                                iso.arrange({ filter: "*" })
+                        } else {
+                                iso.arrange({ filter: "." + category })
                         }
 
                         filterButtons.forEach(filterBut => {
@@ -382,6 +429,14 @@ const masonry = () => {
 
 
 }
+
+
+
+
+
+
+
+
 
 
 

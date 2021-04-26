@@ -43,20 +43,18 @@
         list-style: none;
         padding: 0;
         display: flex;
-     
+
         .category {
             padding: $base $base * 2;
             margin: 0 $base;
             border-radius: 10px;
             user-select: none;
             cursor: pointer;
-            
+
             &.active {
-                
                 border: solid 1px $corporateColor;
                 color: $corporateColor;
                 font-weight: $ui_bold;
-
 
                 a {
                     color: black;
@@ -70,31 +68,30 @@
     display: flex;
     align-items: center;
     position: relative;
-    
+
     .input {
         margin-right: $base;
-        display: none;
+
         border: solid 1px grey;
         border-radius: 10px;
         padding: $base;
         background: transparent;
         position: absolute;
         right: 50px;
-        
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 300ms ease;
 
         &.visible {
-            display: flex;
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 300ms ease;
         }
     }
 
-   
     .search {
         margin-right: $base * 3;
         font-size: 20px;
-        
-       
-        
-
 
         .fa {
             color: rgb(172, 172, 172) !important;
@@ -129,7 +126,7 @@
         // grid-template-columns: 1fr 1fr 1fr;
         // grid-gap: $base * 3;
         .card {
-            width: calc(100%/3);
+            width: calc(100% / 3);
             padding: $base * 2;
             .image {
                 position: relative;
@@ -140,22 +137,21 @@
                     background-color: whitesmoke;
                     border-radius: 0 30px 30px 30px;
                     overflow: hidden;
-                    box-shadow: 0px 6px 20px 0px rgba(196, 196, 196, 0.27); 
+                    box-shadow: 0px 6px 20px 0px rgba(196, 196, 196, 0.27);
                 }
                 .image_hover {
                     position: absolute;
-                    background: linear-gradient(
-                        0deg,
-                        rgb(234, 76, 137) 0%,
-                        rgba(0, 208, 255, 0) 100%
-                    );
+                    background: linear-gradient(0deg, rgb(234, 76, 137) 0%, rgba(0, 208, 255, 0) 100%);
                     border-radius: 0 30px 30px 30px;
                     overflow: hidden;
                     top: 0;
                     left: 0;
                     bottom: 0;
                     right: 0;
-                    display: none;
+
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all 300ms ease;
 
                     .image_hover_content {
                         padding: $base * 3;
@@ -203,7 +199,9 @@
                 }
             }
             .image:hover > .image_hover {
-                display: block;
+                opacity: 1;
+                visibility: visible;
+                transition: all 300ms ease;
             }
             .details {
                 display: flex;
@@ -228,7 +226,8 @@
                         }
                     }
 
-                    .badge_pro, .badge_team {
+                    .badge_pro,
+                    .badge_team {
                         margin-right: $base;
                         padding: $base * 0.1 $base * 0.5;
                         background-color: rgb(211, 211, 211);
@@ -238,15 +237,14 @@
                         font-weight: $ui_bold;
                         text-transform: uppercase;
 
-                        &.no_pro{
+                        &.no_pro {
                             display: none;
                         }
-                        
-                        &.no_team{
+
+                        &.no_team {
                             display: none;
                         }
                     }
-    
                 }
                 .statistics {
                     display: flex;
@@ -285,7 +283,7 @@
                     }
                 }
             }
-            &.hidden{
+            &.hidden {
                 display: none;
             }
         }

@@ -4,11 +4,12 @@ const home = {
             img: "assets/img/slider_0.png",
             card: {
                 appear: false,
-                project: "Space Travel App",
+                project: "",
+                link: "",
                 author: {
-                    name: "Masud Rana",
-                    link: "https://dribbble.com/mrstudio",
-                    img: "https://cdn.dribbble.com/users/6047818/avatars/normal/84b15dbafef241b1493507776816d4b0.jpg?1600202707",
+                    name: "",
+                    link: "",
+                    img: "",
                 },
             },
             text: true,
@@ -19,6 +20,7 @@ const home = {
             card: {
                 appear: true,
                 project: "ARS ⚡️ Shopping with your character",
+                link: "https://dribbble.com/shots/15528941-ARS-Shopping-with-your-character",
                 author: {
                     name: "UBANI",
                     link: "https://dribbble.com/u-ban",
@@ -33,6 +35,7 @@ const home = {
             card: {
                 appear: true,
                 project: "Dreamer Mode",
+                link: "https://dribbble.com/shots/15526803-Dreamer-Mode",
                 author: {
                     name: "Marvin Schwaibold",
                     link: "https://dribbble.com/MarvinSchwaibold",
@@ -47,6 +50,7 @@ const home = {
             card: {
                 appear: true,
                 project: "Smarter",
+                link: "https://dribbble.com/shots/15529498-Smarter",
                 author: {
                     name: "Deividas Bielskis",
                     link: "https://dribbble.com/contrast8",
@@ -60,6 +64,7 @@ const home = {
             card: {
                 appear: true,
                 project: "My Pet",
+                link: "https://dribbble.com/shots/15530406-My-pet",
                 author: {
                     name: "Nguyen Nhut",
                     link: "https://dribbble.com/nguyenhut",
