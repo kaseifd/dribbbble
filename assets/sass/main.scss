@@ -88,18 +88,15 @@ ul {
     border: solid 1px transparent;
     cursor: pointer;
     letter-spacing: 0.5px;
-    
 }
 
 .boton:hover {
-    
     border: solid 1px $corporateColor;
     background-color: transparent;
     color: $corporateColor !important;
-    
 }
 
-button{
+button {
     border: none;
     background-color: transparent;
 }

@@ -59,7 +59,7 @@ const tooltip = () => {
 
         tippy('.sliderButtons', {
                 content: 'You can also use the arrow keys',
-                
+
         });
 
 }
@@ -182,11 +182,11 @@ const submenuEvents = () => {
 
                 // }
 
-               
 
-                
 
-               
+
+
+
 
                 //solo he encontrado esta manera, pero me gustaria hacerlo de forma mas automatica :(
 

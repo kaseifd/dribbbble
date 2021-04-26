@@ -115,21 +115,20 @@
                         .find_work_item:hover,
                         .hire_item:hover {
                             background-color: rgba(255, 255, 255, 0.795);
-                            
                         }
 
-                        .inspiration_item:hover  .arrow,
-                        .find_work_item:hover  .arrow,
-                        .hire_item:hover  .arrow {
+                        .inspiration_item:hover .arrow,
+                        .find_work_item:hover .arrow,
+                        .hire_item:hover .arrow {
                             opacity: 1;
                             visibility: visible;
                             transform: translateX(0px);
                             transition: all 500ms ease;
                         }
 
-                        .inspiration_item:hover  .title,
-                        .find_work_item:hover  .title,
-                        .hire_item:hover  .title {
+                        .inspiration_item:hover .title,
+                        .find_work_item:hover .title,
+                        .hire_item:hover .title {
                             color: $corporateColor;
                         }
                     }

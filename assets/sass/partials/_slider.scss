@@ -68,40 +68,38 @@ html {
         box-shadow: 0px 6px 20px 0px rgba(196, 196, 196, 0.27);
         max-width: 30ch;
 
-        
-            .name {
-                .name_project {
-                    a {
-                        font-size: $base * 3;
-                        line-height: $base * 4;
-                        margin: 0;
-                        color: black;
-                    }
-                    a:hover {
-                        color: rgb(73, 73, 73);
-                    }
+        .name {
+            .name_project {
+                a {
+                    font-size: $base * 3;
+                    line-height: $base * 4;
+                    margin: 0;
+                    color: black;
                 }
-                p {
-                    a {
-                    }
+                a:hover {
+                    color: rgb(73, 73, 73);
                 }
             }
-
-            .author_image {
-                width: 140px;
-                height: 140px;
-                margin: $base * 2 0;
-                border-radius: 50%;
-                overflow: hidden;
-                opacity: 1;
-                transition: all 300ms ease;
+            p {
+                a {
+                }
             }
+        }
 
-            .author_image:hover {
-                opacity: 0.7;
-                transition: all 300ms ease;
-            }
-        
+        .author_image {
+            width: 140px;
+            height: 140px;
+            margin: $base * 2 0;
+            border-radius: 50%;
+            overflow: hidden;
+            opacity: 1;
+            transition: all 300ms ease;
+        }
+
+        .author_image:hover {
+            opacity: 0.7;
+            transition: all 300ms ease;
+        }
 
         &.first_slide {
             display: none;

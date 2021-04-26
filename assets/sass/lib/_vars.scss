@@ -1,23 +1,22 @@
-$font_family_base: "Neue-Roman", 'Helvetica', sans-serif;
+$font_family_base: "Neue-Roman", "Helvetica", sans-serif;
 $font_size_base: 16px;
 $font_weight_base: normal;
 $line_height_base: 1.4;
 $body_color: #333;
 $body_bg: #fff;
 
+$headings_margin_bottom: 1em;
+$paragraph_margin_bottom: 1em;
 
-$headings_margin_bottom: 1em; 
-$paragraph_margin_bottom: 1em; 
+$dt_font_weight: bold;
 
-$dt_font_weight: bold; 
+$link_color: rgb(104, 104, 104);
+$link_decoration: none;
+$link_hover_color: darken($link_color, 10%);
+$link_hover_decoration: none;
+$table_cell_padding: 0.5em;
 
-$link_color: rgb(104, 104, 104); 
-$link_decoration: none; 
-$link_hover_color: darken($link_color, 10%); 
-$link_hover_decoration: none; 
-$table_cell_padding: .5em; 
-
-$text_muted: lighten($body_color, 15%); 
+$text_muted: lighten($body_color, 15%);
 $base: 8px;
 $ui_font_size: 14px;
 $ui_bold: bold;

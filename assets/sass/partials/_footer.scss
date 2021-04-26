@@ -2,7 +2,7 @@ footer {
     display: flex;
     justify-content: center; // flex-end center space-between
     align-items: center; // flex-end center stretch baseline
-    
+
     width: 100%;
     background-color: rgb(250, 250, 250);
     .footer_holder {
@@ -12,12 +12,12 @@ footer {
             display: flex;
             padding: $base * 8 0;
             .brand {
-                a{
-                    svg{
+                a {
+                    svg {
                         color: $corporateColor;
                     }
                 }
-                
+
                 p {
                     width: 25ch;
                 }
@@ -28,13 +28,13 @@ footer {
                         margin-right: $base * 2;
                         font-size: 20px;
                         color: rgb(59, 59, 59);
-                        
+
                         .fa {
                             font-size: 24px;
                         }
                     }
-                    a:hover{
-                        color: black
+                    a:hover {
+                        color: black;
                     }
                 }
             }
@@ -47,7 +47,6 @@ footer {
                             color: black;
                             font-size: $ui_font_size;
                             font-weight: $ui_bold;
-
                         }
                     }
                     ul {
@@ -69,18 +68,18 @@ footer {
             padding: $base * 5 0;
             justify-content: space-between;
             color: grey;
-            
+
             .copy {
                 margin: 0;
                 font-size: $ui_font_size;
             }
             .dribbbled {
                 display: flex;
-                
+
                 p {
                     margin: 0;
-                    font-size: $ui_font_size ;
-                    span{
+                    font-size: $ui_font_size;
+                    span {
                         font-family: "Neue-Bold";
                         color: black;
                     }
@@ -89,7 +88,6 @@ footer {
                     margin-left: $base;
                     width: 24px;
                     height: 24px;
-                    
                 }
             }
         }
