@@ -129,7 +129,6 @@ const submenuEvents = () => {
         const header = document.querySelector('.header');
         const subnavs = document.querySelectorAll(".subnav")
         const navButtons = document.querySelectorAll(".header_navigation_item");
-        console.log(subnavs);
 
 
 
@@ -313,7 +312,6 @@ const getSingleCategories = () => {
         })
 
         uniqueCategories.sort()
-
         return uniqueCategories;
 
 }
@@ -323,6 +321,7 @@ const renderGridMenu = () => {
         const filtersCategories = document.querySelector(".filter_categories ul")
         let htmlString = ""
         const categories = getSingleCategories();
+        console.log(categories);
         categories.unshift("All")
         categories.forEach(category => {
                 htmlString += `
@@ -411,6 +410,7 @@ const search = () => {
                                 } else {
                                         card.classList.add("hidden")
                                 }
+                                iso.arrange()
                         })
                 })
 

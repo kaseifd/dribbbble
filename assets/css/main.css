@@ -3480,7 +3480,7 @@ template {
 .header .header_holder .header_navi .subnav {
   overflow: hidden;
   position: absolute;
-  top: 40px;
+  top: 30px;
   background-color: white;
   z-index: 2;
   display: none;
@@ -3764,6 +3764,8 @@ html {
 .swiper-container {
   width: 100%;
   height: 650px;
+  margin-top: .75em;
+  overflow: hidden;
 }
 
 .swiper-slide {
